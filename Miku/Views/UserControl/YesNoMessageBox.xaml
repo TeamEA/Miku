@@ -22,26 +22,16 @@
 			<RowDefinition Height="0.187*"/>
 			<RowDefinition Height="0.125*"/>
 		</Grid.RowDefinitions>
-		<Border Background="{DynamicResource TitleBorderBrush}" Grid.RowSpan="4" BorderThickness="4,4,4,4">
-			<Border.BorderBrush>
-				<LinearGradientBrush EndPoint="0.974,0.97" StartPoint="0.024,0.03">
-					<GradientStop Color="#FF121212" Offset="0"/>
-					<GradientStop Color="#FF040404" Offset="1"/>
-					<GradientStop Color="#FF7A7878" Offset="0.272"/>
-					<GradientStop Color="#FFC1C1C1" Offset="0.786"/>
-					<GradientStop Color="#FF262525" Offset="0.54"/>
-				</LinearGradientBrush>
-			</Border.BorderBrush>
-		</Border>
+        <Border Background="LightGray" Grid.RowSpan="4" BorderThickness="4,4,4,4"/>	
 		<Button x:Name="yesButton" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Yes" 
                 Margin="56,0,0,0" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" Width="48" 
                 Style="{DynamicResource ButtonStyle1}" Click="yesButton_Click" Height="28" Grid.RowSpan="2" />
 		<Button x:Name="noButton" HorizontalAlignment="Right" Margin="0,0,60,12" Content="No" 
                 d:LayoutOverrides="Height" Grid.Row="2" Width="48" Style="{DynamicResource ButtonStyle1}" Click="noButton_Click" Grid.RowSpan="2" />
 		<Rectangle Margin="5,5,5,5" Fill="#FFFFFFFF" Stroke="#FFEEB20E" StrokeThickness="2" Grid.Row="1"/>
-		<TextBlock x:Name="messageTextBlock" Margin="8,8,8,8" Grid.Row="1" Text="" TextWrapping="Wrap" Background="#FF686161" Foreground="#FFFFFFFF"/>
-		<Button HorizontalAlignment="Right" Width="24" Content="X" VerticalAlignment="Stretch" 
-                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Hidden"
-                x:Name="closeButton" Click="closeButton_Click" Style="{DynamicResource ButtonStyle1}" Padding="0,0,0,2" Margin="0,2,5,0" />
+		<TextBlock x:Name="messageTextBlock" Margin="8,8,8,8" Grid.Row="1" Text="" TextWrapping="Wrap" Background="Silver" Foreground="Blue"/>
+		<Button HorizontalAlignment="Right" Width="246" VerticalAlignment="Stretch" 
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                x:Name="closeButton" Content="确认框" Style="{DynamicResource ButtonStyle1}" Padding="0,0,0,2" />
 	</Grid>
 </UserControl>

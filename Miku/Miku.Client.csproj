@@ -127,6 +127,9 @@
     </Compile>
     <Compile Include="Views\ICommunicationView.cs" />
     <Compile Include="Views\IActionView.cs" />
+    <Compile Include="Views\MainViews\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\TestRemoteCommunicationView.xaml.cs">
       <DependentUpon>TestRemoteCommunicationView.xaml</DependentUpon>
     </Compile>
@@ -167,6 +170,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Dictionarys\Xamls\Main\DynamicStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dictionarys\Xamls\Main\Main.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -180,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ActionViews\HelpView\HelpStepOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainViews\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -284,6 +295,19 @@
     <EmbeddedResource Include="Views\UserControl\AboutSystem.resx">
       <DependentUpon>AboutSystem.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionarys\Images\OL_image0.png" />
+    <Resource Include="Dictionarys\Images\OL_image1.png" />
+    <Resource Include="Dictionarys\Images\O_image0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\键鼠动作录制.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\051027nature01.jpg" />
+    <Resource Include="Images\051027nature02.jpg" />
+    <Resource Include="Images\051123Webshots05.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

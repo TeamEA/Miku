@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dictionary/images/syimage2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/%e9%94%ae%e9%bc%a0%e5%8a%a8%e4%bd%9c%e5%bd%95%e5%88%b6.png")]
 
 

@@ -9,14 +9,12 @@ namespace Miku.Client.Helpers
 {
     class ListBoxItemsHelper
     {
-        public static void AddListBixItem(string strText, ListBox listBox, Color color)
+        public static void AddListBixItem(int num,string strText, ListBox listBox)
         {
             StackPanel stackPanel = new StackPanel();
             stackPanel.Height = 25;
             TextBlock textBlock = new TextBlock();
-            textBlock.Text = ">>  " + strText;
-            textBlock.FontSize = 18;
-            textBlock.Foreground = new SolidColorBrush(color);
+            textBlock.Text = ">>  " + strText; 
             stackPanel.Children.Add(textBlock);
             listBox.Items.Add(stackPanel);
         }

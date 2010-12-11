@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	<DrawingBrush x:Key="主界面" Stretch="Fill">
+	<DrawingBrush x:Key="主界面" Stretch="None">
 		<DrawingBrush.Drawing>
 			<DrawingGroup>
 				<DrawingGroup.Children>

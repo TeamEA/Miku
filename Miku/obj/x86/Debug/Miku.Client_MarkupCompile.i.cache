@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\Team\Miku\Miku\Miku\App.xaml
-16-308768667
+18-787793853
 
-452141372926
+461130664102
 18-863338642
-Dictionarys\Common\exit.xaml;Dictionarys\Common\pause.xaml;Dictionarys\Common\play.xaml;Dictionarys\Common\save.xaml;Dictionarys\Common\stop.xaml;Dictionarys\Common\window.xaml;Dictionarys\Xamls\Buttoneare\Buttoneare.xaml;Dictionarys\Xamls\Main\Main.xaml;Dictionarys\Xamls\Main\System.xaml;Views\ActionViews\ActionRecordView.xaml;Views\ActionViews\HelpView\HelpStepOne.xaml;Views\TestActionsView.xaml;Views\TestRemoteCommunicationView.xaml;Views\UserControl\XamlResource\BrushResourceDictionary.xaml;Views\UserControl\XamlResource\StyleResourceDictionary.xaml;Views\UserControl\YesNoMessageBox.xaml;
+Dictionarys\Common\exit.xaml;Dictionarys\Common\pause.xaml;Dictionarys\Common\play.xaml;Dictionarys\Common\save.xaml;Dictionarys\Common\stop.xaml;Dictionarys\Common\window.xaml;Dictionarys\Xamls\Buttoneare\Buttoneare.xaml;Dictionarys\Xamls\Main\DynamicStyle.xaml;Dictionarys\Xamls\Main\Main.xaml;Dictionarys\Xamls\Main\System.xaml;Views\ActionViews\ActionRecordView.xaml;Views\ActionViews\HelpView\HelpStepOne.xaml;Views\MainViews\MainView.xaml;Views\TestActionsView.xaml;Views\TestRemoteCommunicationView.xaml;Views\UserControl\XamlResource\BrushResourceDictionary.xaml;Views\UserControl\XamlResource\StyleResourceDictionary.xaml;Views\UserControl\YesNoMessageBox.xaml;
 
 True
 

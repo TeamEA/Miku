@@ -38,3 +38,6 @@ G:\Team\Miku\Miku\Miku\obj\x86\Debug\Views\ActionViews\ActionRecordView.g.cs
 G:\Team\Miku\Miku\Miku\obj\x86\Debug\Views\ActionViews\HelpView\HelpStepOne.g.cs
 G:\Team\Miku\Miku\Miku\obj\x86\Debug\Views\ActionViews\ActionRecordView.baml
 G:\Team\Miku\Miku\Miku\obj\x86\Debug\Miku.Client.Views.UserControl.AboutSystem.resources
+G:\Team\Miku\Miku\Miku\obj\x86\Debug\Dictionarys\Xamls\Main\DynamicStyle.baml
+G:\Team\Miku\Miku\Miku\obj\x86\Debug\Views\MainViews\MainView.g.cs
+G:\Team\Miku\Miku\Miku\obj\x86\Debug\Views\MainViews\MainView.baml

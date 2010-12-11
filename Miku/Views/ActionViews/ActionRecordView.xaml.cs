@@ -24,11 +24,12 @@ namespace Miku.Client.Views.ActionViews
     {
         private IActionController actionController;
         private RecordStrategies recordStrategy;
-        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.NotifyIcon notifyIcon;       
 
         public ActionRecordView()
         {
             InitializeComponent();
+            this.Expand.Visibility = System.Windows.Visibility.Hidden;
             notifyIcon = new System.Windows.Forms.NotifyIcon();
             AddNotifyIcon(this.notifyIcon, "点控动作录制", "Actions.ico");
         }
@@ -57,6 +58,11 @@ namespace Miku.Client.Views.ActionViews
             this.actionController.RequestSaveActions();
         }
 
+        private void btnOpenFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         #region IActionView
         public void ResponseStartRecording()
         {           
@@ -73,12 +79,23 @@ namespace Miku.Client.Views.ActionViews
             
         }
 
+
         public void ResponseStartPlayback()
         {           
             this.Hide();
         }
 
         public void ResponseSaveActions(ref string filepath)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "MikuActionScript(*.mact)|*.mact";
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                filepath = dialog.FileName;
+            }
+        }
+
+        void ResponsePlaybackExistFile(ref string filepath)
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "MikuActionScript(*.mact)|*.mact";
@@ -163,11 +180,7 @@ namespace Miku.Client.Views.ActionViews
         {
             this.Help();
         }
-
-        private void btnContrct_Click(object sender, RoutedEventArgs e)
-        {
-            this.Contract();
-        }
+               
         
         #endregion
 
@@ -199,11 +212,6 @@ namespace Miku.Client.Views.ActionViews
             aboutSystem.ShowDialog();
         }
 
-        private void Contract()
-        {
-            //throw new NotImplementedException();
-        }
-
         private void WindowClose()
         {
             this.notifyIcon.Visible = false;
@@ -211,7 +219,34 @@ namespace Miku.Client.Views.ActionViews
             this.notifyIcon = null;
             this.Close();
         }
+        #endregion       
+
+        #region 扩展区
+        private void btnrightExpand_Click(object sender, RoutedEventArgs e)
+        {            
+            this.Width += 210;
+            this.Expand.Visibility = System.Windows.Visibility.Visible;
+            this.btnrightExpand.IsEnabled = false;
+            this.btnrightExpand.Visibility = System.Windows.Visibility.Hidden;
+            this.btnleftExpand.IsEnabled = true;
+            this.btnleftExpand.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void btnleftExpand_Click(object sender, RoutedEventArgs e)
+        {
+            this.Expand.Visibility = System.Windows.Visibility.Hidden;
+            this.Width -= 210;
+            this.btnleftExpand.IsEnabled = false;
+            this.btnleftExpand.Visibility = System.Windows.Visibility.Hidden;
+            this.btnrightExpand.IsEnabled = true;
+            this.btnrightExpand.Visibility = System.Windows.Visibility.Visible;
+        }
         #endregion
+               
+        private void lbxRecordList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
 
     }
 }

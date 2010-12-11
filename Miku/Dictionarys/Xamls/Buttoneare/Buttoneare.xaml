@@ -87,6 +87,163 @@
 		</DrawingBrush.Drawing>
 	</DrawingBrush>
 
+    <DrawingBrush x:Key="保存记录" Stretch="Uniform">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="M 16.3214,2.88L 42.2413,2.88L 42.2413,21.12L 38.8813,21.12L 38.8813,19.2L 31.2014,19.2L 31.2014,25.44L 46.0814,25.44L 46.0814,28.8L 33.8038,28.8C 36.5988,33.525 40.8513,37.245 46.5613,39.96C 45.5913,41.215 44.8088,42.295 44.2138,43.2C 38.5488,39.73 34.2114,35.04 31.2014,29.13L 31.2014,47.04L 27.8414,47.04L 27.8414,28.9425C 24.0663,35.6025 19.3414,40.675 13.6663,44.16C 12.9464,43.315 12.0714,42.395 11.0413,41.4C 16.6413,38.395 21.1863,34.195 24.6763,28.8L 12.0013,28.8L 12.0013,25.44L 27.8414,25.44L 27.8414,19.2L 19.6813,19.2L 19.6813,21.12L 16.3214,21.12L 16.3214,2.88 Z M 0.00134277,23.52C 4.33136,17.32 7.69135,9.79999 10.0814,0.959991L 13.4413,1.98749C 12.1163,6.08249 10.6763,9.91501 9.12134,13.485L 9.12134,47.04L 5.76129,47.04L 5.76129,20.52C 4.3913,22.97 2.95636,25.25 1.45636,27.36C 1.0163,26.05 0.531311,24.77 0.00134277,23.52 Z M 38.8813,6.23999L 19.6813,6.23999L 19.6813,15.84L 38.8813,15.84L 38.8813,6.23999 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF0061FF" Offset="0"/>
+                                    <GradientStop Color="#FF0161FE" Offset="0.0790698"/>
+                                    <GradientStop Color="#FF0262FE" Offset="0.12093"/>
+                                    <GradientStop Color="#FF0664FE" Offset="0.223256"/>
+                                    <GradientStop Color="#FF0A67FE" Offset="0.260465"/>
+                                    <GradientStop Color="#FF2376FD" Offset="0.423256"/>
+                                    <GradientStop Color="#FF2C7CFC" Offset="0.618379"/>
+                                    <GradientStop Color="#FF3682FC" Offset="0.618605"/>
+                                    <GradientStop Color="#FF619BFA" Offset="0.772093"/>
+                                    <GradientStop Color="#FF7FAEFA" Offset="0.87907"/>
+                                    <GradientStop Color="#FFB9D1F8" Offset="0.979465"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 48.9614,5.28L 61.8388,5.28C 62.5588,3.565 63.2263,1.80499 63.8413,0L 67.6813,0.982483C 67.1964,2.44751 66.6888,3.88 66.1588,5.28L 94.5613,5.28L 94.5613,8.64001L 64.8013,8.64001C 63.2163,12.655 61.4564,16.3675 59.5213,19.7775L 59.5213,46.08L 55.6813,46.08L 55.6813,25.2825C 53.9813,27.5875 52.1713,29.72 50.2513,31.68C 49.6263,30.63 48.8763,29.55 48.0013,28.44C 53.1863,22.845 57.3463,16.245 60.4813,8.64001L 48.9614,8.64001L 48.9614,5.28 Z M 61.4413,26.88L 77.7613,26.88L 77.7613,23.52C 81.0163,21.425 83.8738,19.345 86.3338,17.28L 64.3214,17.28L 64.3214,13.92L 91.6813,13.92L 91.6813,17.655C 88.6063,20.075 85.2463,22.51 81.6013,24.96L 81.6013,26.88L 95.0413,26.88L 95.0413,30.24L 81.6013,30.24L 81.6013,40.755C 81.6013,44.305 79.7913,46.08 76.1713,46.08C 74.4564,46.08 72.1538,46.035 69.2639,45.945C 69.1038,44.785 68.8963,43.55 68.6413,42.24C 71.6363,42.56 73.8488,42.72 75.2788,42.72C 76.9338,42.72 77.7613,41.8875 77.7613,40.2225L 77.7613,30.24L 61.4413,30.24L 61.4413,26.88 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF0061FF" Offset="0"/>
+                                    <GradientStop Color="#FF0161FE" Offset="0.0790698"/>
+                                    <GradientStop Color="#FF0262FE" Offset="0.12093"/>
+                                    <GradientStop Color="#FF0664FE" Offset="0.223256"/>
+                                    <GradientStop Color="#FF0A67FE" Offset="0.260465"/>
+                                    <GradientStop Color="#FF2376FD" Offset="0.423256"/>
+                                    <GradientStop Color="#FF2C7CFC" Offset="0.618379"/>
+                                    <GradientStop Color="#FF3682FC" Offset="0.618605"/>
+                                    <GradientStop Color="#FF619BFA" Offset="0.772093"/>
+                                    <GradientStop Color="#FF7FAEFA" Offset="0.87907"/>
+                                    <GradientStop Color="#FFB9D1F8" Offset="0.979465"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 118.081,21.6L 118.081,37.725C 118.081,40.095 119.206,41.28 121.456,41.28L 133.396,41.28C 136.236,41.28 137.844,40.2225 138.219,38.1075C 138.564,36.4025 138.891,33.94 139.201,30.72C 140.511,31.255 141.791,31.71 143.041,32.085C 142.636,34.97 142.181,37.48 141.676,39.615C 140.991,42.965 138.456,44.64 134.071,44.64L 119.971,44.64C 116.151,44.64 114.241,42.6475 114.241,38.6625L 114.241,18.24L 135.841,18.24L 135.841,6.23999L 112.321,6.23999L 112.321,2.88L 139.681,2.88L 139.681,24L 135.841,24L 135.841,21.6L 118.081,21.6 Z M 112.479,35.04C 112.574,36.59 112.681,37.87 112.801,38.88C 108.786,41.585 105.681,43.825 103.486,45.6L 101.281,42.36C 102.241,41.545 102.721,40.13 102.721,38.115L 102.721,19.68L 96.4813,19.68L 96.4813,16.32L 106.561,16.32L 106.561,39.1275C 108.396,37.8975 110.369,36.535 112.479,35.04 Z M 101.641,0.959991C 105.006,4.47 107.446,7.07001 108.961,8.76001L 105.721,11.52C 103.791,8.91998 101.511,6.22751 98.8813,3.4425L 101.641,0.959991 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="-1.31089e-006,0.5" EndPoint="0.999999,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF0061FF" Offset="0"/>
+                                    <GradientStop Color="#FF0161FE" Offset="0.0790698"/>
+                                    <GradientStop Color="#FF0262FE" Offset="0.12093"/>
+                                    <GradientStop Color="#FF0664FE" Offset="0.223256"/>
+                                    <GradientStop Color="#FF0A67FE" Offset="0.260465"/>
+                                    <GradientStop Color="#FF2376FD" Offset="0.423256"/>
+                                    <GradientStop Color="#FF2C7CFC" Offset="0.618379"/>
+                                    <GradientStop Color="#FF3682FC" Offset="0.618605"/>
+                                    <GradientStop Color="#FF619BFA" Offset="0.772093"/>
+                                    <GradientStop Color="#FF7FAEFA" Offset="0.87907"/>
+                                    <GradientStop Color="#FFB9D1F8" Offset="0.979465"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 184.479,24L 187.201,26.76C 184.601,28.605 181.371,30.78 177.511,33.285C 181.126,36.155 185.636,38.22 191.041,39.48C 190.071,40.78 189.211,42.02 188.461,43.2C 180.056,40.635 173.876,36.275 169.921,30.12L 169.921,40.365C 169.921,44.175 167.924,46.08 163.929,46.08C 162.024,46.08 159.766,46.08 157.156,46.08C 156.966,44.98 156.741,43.7 156.481,42.24C 158.786,42.525 160.851,42.685 162.676,42.72C 164.946,42.72 166.081,41.7 166.081,39.66L 166.081,22.56L 144.961,22.56L 144.961,19.2L 180.001,19.2L 180.001,14.88L 151.201,14.88L 151.201,11.52L 180.001,11.52L 180.001,6.72L 150.241,6.72L 150.241,3.35999L 183.361,3.35999L 183.361,19.2L 190.561,19.2L 190.561,22.56L 169.921,22.56L 169.921,23.4C 171.191,26.245 172.831,28.7425 174.841,30.8925C 178.391,28.5475 181.604,26.25 184.479,24 Z M 144.481,38.88C 150.611,36.86 157.256,34.46 164.416,31.68C 164.666,32.975 164.901,34.095 165.121,35.04C 158.896,37.325 152.499,39.725 145.929,42.24L 144.481,38.88 Z M 150.954,23.52C 153.869,25.435 156.831,27.515 159.841,29.76L 157.546,32.52C 154.781,30.38 151.866,28.3 148.801,26.28L 150.954,23.52 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF0061FF" Offset="0"/>
+                                    <GradientStop Color="#FF0161FE" Offset="0.0790698"/>
+                                    <GradientStop Color="#FF0262FE" Offset="0.12093"/>
+                                    <GradientStop Color="#FF0664FE" Offset="0.223256"/>
+                                    <GradientStop Color="#FF0A67FE" Offset="0.260465"/>
+                                    <GradientStop Color="#FF2376FD" Offset="0.423256"/>
+                                    <GradientStop Color="#FF2C7CFC" Offset="0.618379"/>
+                                    <GradientStop Color="#FF3682FC" Offset="0.618605"/>
+                                    <GradientStop Color="#FF619BFA" Offset="0.772093"/>
+                                    <GradientStop Color="#FF7FAEFA" Offset="0.87907"/>
+                                    <GradientStop Color="#FFB9D1F8" Offset="0.979465"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <DrawingBrush x:Key="打开记录" Stretch="Uniform">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="M 0,151.026C 2.96002,150.041 5.84003,149.059 8.64001,148.079L 8.64001,136.626L 0.960022,136.626L 0.960022,133.266L 8.64001,133.266L 8.64001,124.626L 12.48,124.626L 12.48,133.266L 19.68,133.266L 19.68,136.626L 12.48,136.626L 12.48,146.789C 15.105,145.809 17.665,144.821 20.16,143.826C 20.28,145.456 20.44,146.736 20.64,147.666C 17.89,148.646 15.17,149.634 12.48,150.629L 12.48,164.579C 12.48,168.024 10.8225,169.746 7.50751,169.746C 6.07751,169.746 4.24506,169.731 2.01001,169.701C 1.85504,168.276 1.66504,166.851 1.44,165.426C 3.03003,165.746 4.73004,165.906 6.54004,165.906C 7.94,165.906 8.64001,165.156 8.64001,163.656L 8.64001,151.964C 6.09003,152.929 3.57001,153.896 1.08002,154.866L 0,151.026 Z M 20.16,127.986L 47.04,127.986L 47.04,131.346L 38.88,131.346L 38.88,163.236C 38.88,167.226 36.9125,169.236 32.9775,169.266C 30.9276,169.296 28.1875,169.296 24.7575,169.266C 24.5975,167.811 24.345,166.371 24.0001,164.946C 27.6,165.266 30.2925,165.426 32.0775,165.426C 34.0526,165.426 35.04,164.324 35.04,162.119L 35.04,131.346L 20.16,131.346L 20.16,127.986 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF00FF3E" Offset="0"/>
+                                    <GradientStop Color="#FF12DB9D" Offset="0.130769"/>
+                                    <GradientStop Color="#FF25B7FD" Offset="0.2"/>
+                                    <GradientStop Color="#FF6BF98F" Offset="0.469767"/>
+                                    <GradientStop Color="#FF95F7AF" Offset="0.637209"/>
+                                    <GradientStop Color="#FF0090FF" Offset="0.795349"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 48.48,144.786L 60.48,144.786L 60.48,131.346L 50.4,131.346L 50.4,127.506L 92.64,127.506L 92.64,131.346L 83.04,131.346L 83.04,144.786L 94.56,144.786L 94.56,148.626L 83.04,148.626L 83.04,170.226L 79.2,170.226L 79.2,148.626L 64.2975,148.626C 64.1875,154.371 63.3575,158.639 61.8076,161.429C 60.2625,164.509 56.71,167.601 51.15,170.706C 50.34,169.596 49.45,168.516 48.48,167.466C 53.32,165.011 56.545,162.446 58.155,159.771C 59.595,157.616 60.3625,153.901 60.4575,148.626L 48.48,148.626L 48.48,144.786 Z M 64.32,144.786L 79.2,144.786L 79.2,131.346L 64.32,131.346L 64.32,144.786 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.499999" EndPoint="1,0.499999">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF00FF3E" Offset="0"/>
+                                    <GradientStop Color="#FF12DB9D" Offset="0.130769"/>
+                                    <GradientStop Color="#FF25B7FD" Offset="0.2"/>
+                                    <GradientStop Color="#FF6BF98F" Offset="0.469767"/>
+                                    <GradientStop Color="#FF95F7AF" Offset="0.637209"/>
+                                    <GradientStop Color="#FF0090FF" Offset="0.795349"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 118.08,145.266L 118.08,161.391C 118.08,163.761 119.205,164.946 121.455,164.946L 133.395,164.946C 136.235,164.946 137.843,163.889 138.218,161.774C 138.563,160.069 138.89,157.606 139.2,154.386C 140.51,154.921 141.79,155.376 143.04,155.751C 142.635,158.636 142.18,161.146 141.675,163.281C 140.99,166.631 138.455,168.306 134.07,168.306L 119.97,168.306C 116.15,168.306 114.24,166.314 114.24,162.329L 114.24,141.906L 135.84,141.906L 135.84,129.906L 112.32,129.906L 112.32,126.546L 139.68,126.546L 139.68,147.666L 135.84,147.666L 135.84,145.266L 118.08,145.266 Z M 112.477,158.706C 112.573,160.256 112.68,161.536 112.8,162.546C 108.785,165.251 105.68,167.491 103.485,169.266L 101.28,166.026C 102.24,165.211 102.72,163.796 102.72,161.781L 102.72,143.346L 96.48,143.346L 96.48,139.986L 106.56,139.986L 106.56,162.794C 108.395,161.564 110.367,160.201 112.477,158.706 Z M 101.64,124.626C 105.005,128.136 107.445,130.736 108.96,132.426L 105.72,135.186C 103.79,132.586 101.51,129.894 98.88,127.109L 101.64,124.626 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF00FF3E" Offset="0"/>
+                                    <GradientStop Color="#FF12DB9D" Offset="0.130769"/>
+                                    <GradientStop Color="#FF25B7FD" Offset="0.2"/>
+                                    <GradientStop Color="#FF6BF98F" Offset="0.469767"/>
+                                    <GradientStop Color="#FF95F7AF" Offset="0.637209"/>
+                                    <GradientStop Color="#FF0090FF" Offset="0.795349"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="M 184.478,147.666L 187.2,150.426C 184.6,152.271 181.37,154.446 177.51,156.951C 181.125,159.821 185.635,161.886 191.04,163.146C 190.07,164.446 189.21,165.686 188.46,166.866C 180.055,164.301 173.875,159.941 169.92,153.786L 169.92,164.031C 169.92,167.841 167.923,169.746 163.927,169.746C 162.023,169.746 159.765,169.746 157.155,169.746C 156.965,168.646 156.74,167.366 156.48,165.906C 158.785,166.191 160.85,166.351 162.675,166.386C 164.945,166.386 166.08,165.366 166.08,163.326L 166.08,146.226L 144.96,146.226L 144.96,142.866L 180,142.866L 180,138.546L 151.2,138.546L 151.2,135.186L 180,135.186L 180,130.386L 150.24,130.386L 150.24,127.026L 183.36,127.026L 183.36,142.866L 190.56,142.866L 190.56,146.226L 169.92,146.226L 169.92,147.066C 171.19,149.911 172.83,152.409 174.84,154.559C 178.39,152.214 181.603,149.916 184.478,147.666 Z M 144.48,162.546C 150.61,160.526 157.255,158.126 164.415,155.346C 164.665,156.641 164.9,157.761 165.12,158.706C 158.895,160.991 152.497,163.391 145.927,165.906L 144.48,162.546 Z M 150.953,147.186C 153.867,149.101 156.83,151.181 159.84,153.426L 157.545,156.186C 154.78,154.046 151.865,151.966 148.8,149.946L 150.953,147.186 Z ">
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF00FF3E" Offset="0"/>
+                                    <GradientStop Color="#FF12DB9D" Offset="0.130769"/>
+                                    <GradientStop Color="#FF25B7FD" Offset="0.2"/>
+                                    <GradientStop Color="#FF6BF98F" Offset="0.469767"/>
+                                    <GradientStop Color="#FF95F7AF" Offset="0.637209"/>
+                                    <GradientStop Color="#FF0090FF" Offset="0.795349"/>
+                                    <GradientStop Color="#FFF3F4F6" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
     <DrawingBrush x:Key="Recording" Stretch="Fill">
         <DrawingBrush.Drawing>
             <DrawingGroup>
@@ -112,11 +269,11 @@
                             <Border.BitmapEffect>
                                 <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Blue" />
                             </Border.BitmapEffect>
-                            <Rectangle Width="220" Height="70" RadiusY="8.5" RadiusX="8.5">
+                            <Rectangle Width="120" Height="50" RadiusY="8.5" RadiusX="8.5">
                                 <Rectangle.Fill>Blue</Rectangle.Fill>
                             </Rectangle>
                         </Border>
-                        <Rectangle x:Name="outer" Width="218" Height="68" RadiusY="8.5" RadiusX="8.5">
+                        <Rectangle x:Name="outer" Width="118" Height="48" RadiusY="8.5" RadiusX="8.5">
                             <Rectangle.Fill>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                     <GradientStop Offset="0" Color="Pink"/>
@@ -124,12 +281,11 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle x:Name="inner" Width="215" Height="65" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Recording}">
+                        <Rectangle x:Name="inner" Width="115" Height="45" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Recording}">
                         </Rectangle>
                         <Border>
-                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="130,0,0,0"
-                                       Background="{StaticResource 录_制}" Width="100" Height="30"
-                                       Text="{TemplateBinding  Content}">
+                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="30,0,0,0"
+                                       Background="{StaticResource 录_制}" Width="100" Height="30">
                             </TextBlock>
                         </Border>
                     </Grid>
@@ -199,11 +355,11 @@
                             <Border.BitmapEffect>
                                 <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
                             </Border.BitmapEffect>
-                            <Rectangle Width="220" Height="70" RadiusY="8.5" RadiusX="8.5">
+                            <Rectangle Width="120" Height="50" RadiusY="8.5" RadiusX="8.5">
                                 <Rectangle.Fill>Red</Rectangle.Fill>
                             </Rectangle>
                         </Border>
-                        <Rectangle x:Name="outer" Width="218" Height="68" RadiusY="8.5" RadiusX="8.5">
+                        <Rectangle x:Name="outer" Width="118" Height="48" RadiusY="8.5" RadiusX="8.5">
                             <Rectangle.Fill>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                     <GradientStop Offset="0" Color="Pink"/>
@@ -211,10 +367,10 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle x:Name="inner" Width="215" Height="65" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Playing}">
+                        <Rectangle x:Name="inner" Width="115" Height="45" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Playing}">
                         </Rectangle>
                         <Border>
-                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="130,0,0,0"
+                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="30,0,0,0"
                                        Background="{StaticResource 回_放}" Width="100" Height="30"
                                        Text="{TemplateBinding  Content}">
                             </TextBlock>
@@ -286,11 +442,11 @@
                             <Border.BitmapEffect>
                                 <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Green" />
                             </Border.BitmapEffect>
-                            <Rectangle Width="220" Height="70" RadiusY="8.5" RadiusX="8.5">
+                            <Rectangle Width="120" Height="50" RadiusY="8.5" RadiusX="8.5">
                                 <Rectangle.Fill>Green</Rectangle.Fill>
                             </Rectangle>
                         </Border>
-                        <Rectangle x:Name="outer" Width="218" Height="68" RadiusY="8.5" RadiusX="8.5">
+                        <Rectangle x:Name="outer" Width="118" Height="48" RadiusY="8.5" RadiusX="8.5">
                             <Rectangle.Fill>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                                     <GradientStop Offset="0" Color="Pink"/>
@@ -298,11 +454,11 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle x:Name="inner" Width="215" Height="65" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Save}">
+                        <Rectangle x:Name="inner" Width="115" Height="45" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  Save}">
                         </Rectangle>
                         <Border>
-                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="130,0,0,0"
-                                       Background="{StaticResource 保_存}" Width="100" Height="30"
+                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="10,0,0,0"
+                                       Background="{StaticResource 保存记录}" Width="100" Height="30"
                                        Text="{TemplateBinding  Content}">
                             </TextBlock>
                         </Border>
@@ -347,6 +503,94 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
+    <DrawingBrush x:Key="open" Stretch="Fill">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <DrawingGroup>
+                        <DrawingGroup.Transform>
+                            <MatrixTransform Matrix="1.33333,0,0,1.33333,341.333,513.333"/>
+                        </DrawingGroup.Transform>
+                        <DrawingGroup.Children>
+                            <ImageDrawing ImageSource="/Miku.Client;component/Dictionarys/Images/O_image0.png" Rect="0,0,361,78"/>
+                        </DrawingGroup.Children>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <Style x:Key="openStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Green" />
+                            </Border.BitmapEffect>
+                            <Rectangle Width="220" Height="55" RadiusY="8.5" RadiusX="8.5">
+                                <Rectangle.Fill>Green</Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Rectangle x:Name="outer" Width="218" Height="53" RadiusY="8.5" RadiusX="8.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="Pink"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle x:Name="inner" Width="215" Height="50" RadiusY="8.5" RadiusX="8.5" Fill="{StaticResource  open}">
+                        </Rectangle>
+                        <Border>
+                            <TextBlock x:Name="content"  VerticalAlignment="Center"  Margin="110,0,0,0"
+                                       Background="{StaticResource 打开记录}" Width="100" Height="30">
+                            </TextBlock>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Rectangle.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Rectangle.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Rectangle.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Rectangle.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".98" ScaleY=".98"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
 
     <Style TargetType="{x:Type RadioButton}" >
         <Setter Property="Foreground">
@@ -357,15 +601,15 @@
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
-        <Setter Property="FontSize" Value="19"/>
+        <Setter Property="FontSize" Value="16"/>
             <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RadioButton}">
                     <BulletDecorator Background="Transparent">
                         <BulletDecorator.Bullet>
                             <StackPanel Orientation="Horizontal" >
-                                <Grid Width="40" Height="40">
-                                    <Ellipse x:Name="MainEllipse" Width="40" Height="40">
+                                <Grid Width="35" Height="35">
+                                    <Ellipse x:Name="MainEllipse" Width="35" Height="35">
                                         <Ellipse.Fill>
                                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                 <GradientStop Color="#FFC8C8C8" Offset="0"/>
@@ -469,4 +713,324 @@
             </DrawingGroup>
         </DrawingBrush.Drawing>
     </DrawingBrush>
+
+
+    <DrawingBrush x:Key="left" Stretch="Fill">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="F1 M 72.8927,1.33829L 73.5827,11.5779L 85.9055,10.7476C 87.7932,10.6204 89.4265,12.0476 89.5537,13.9352L 90.278,24.6849C 90.4052,26.5726 88.9781,28.2059 87.0904,28.3331L 74.7675,29.1634L 75.4576,39.403C 74.2127,40.8278 72.0486,40.9736 70.6239,39.7288L 51.1454,24.3498C 49.7206,23.105 49.6414,21.1862 50.8863,19.7614L 68.0591,1.66391C 69.304,0.239227 71.468,0.0934143 72.8927,1.33829 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen LineJoin="Round" Brush="#CD944E00"/>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0.953488,0.577056" EndPoint="1.95858,0.577056">
+                                <LinearGradientBrush.RelativeTransform>
+                                    <TransformGroup>
+                                        <SkewTransform CenterX="0.953488" CenterY="0.577056" AngleX="-0.0368464" AngleY="0"/>
+                                        <RotateTransform CenterX="0.953488" CenterY="0.577056" Angle="176.127"/>
+                                    </TransformGroup>
+                                </LinearGradientBrush.RelativeTransform>
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#CD772200" Offset="0"/>
+                                    <GradientStop Color="#CDEB872C" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <Style x:Key="leftStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Transparent" />
+                            </Border.BitmapEffect>
+                            <Ellipse Width="40" Height="55">
+                                <Ellipse.Fill>Transparent</Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        <Ellipse x:Name="outer" Width="38" Height="53" >
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="Silver"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="inner" Width="35" Height="50" Fill="{StaticResource  left}">
+                        </Ellipse>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".98" ScaleY=".98"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    <DrawingBrush x:Key="right" Stretch="Fill">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="F1 M 15.8557,6.04868L 16.1658,16.3068L 3.82062,16.68C 1.92953,16.7371 0.442871,18.3165 0.5,20.2076L 0.825531,30.9767C 0.88269,32.8678 2.46204,34.3545 4.35312,34.2973L 16.6983,33.9242L 17.0083,44.1823C 18.3859,45.4792 20.5539,45.4137 21.8507,44.036L 39.7398,26.8341C 41.0365,25.4565 40.9286,23.539 39.551,22.2423L 20.6981,5.90225C 19.3205,4.6055 17.1525,4.67105 15.8557,6.04868 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen LineJoin="Round" Brush="#CD275281"/>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0.580203,0.66629" EndPoint="0.556127,-0.130501">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#CD214F83" Offset="0"/>
+                                    <GradientStop Color="#CD74AAE7" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <Style x:Key="rightStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Transparent" />
+                            </Border.BitmapEffect>
+                            <Ellipse Width="40" Height="55">
+                                <Ellipse.Fill>Transparent</Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        <Ellipse x:Name="outer" Width="38" Height="53" >
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="Silver"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="inner" Width="35" Height="50" Fill="{StaticResource  right}">
+                        </Ellipse>                        
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".98" ScaleY=".98"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Expand" TargetType="GroupBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="GroupBox">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0"
+                  BorderThickness="1"
+                  CornerRadius="2,2,0,0">
+                            <Border.BorderBrush>
+                                <LinearGradientBrush StartPoint="0,0"
+                                   EndPoint="0,1">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStopCollection>
+                                            <GradientStop Color="{DynamicResource BorderLightColor}"
+                                  Offset="0.0" />
+                                            <GradientStop Color="{DynamicResource BorderDarkColor}"
+                                  Offset="1.0" />
+                                        </GradientStopCollection>
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Border.BorderBrush>
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0"
+                                   EndPoint="0,1">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStopCollection>
+                                            <GradientStop Color="{DynamicResource ControlLightColor}"
+                                  Offset="0.0" />
+                                            <GradientStop Color="{DynamicResource ControlMediumColor}"
+                                  Offset="1.0" />
+                                        </GradientStopCollection>
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <ContentPresenter Margin="4"
+                              ContentSource="Header"
+                              RecognizesAccessKey="True" />
+                        </Border>
+
+                        <Border Grid.Row="1"
+                  BorderThickness="1,0,1,1"
+                  CornerRadius="0,0,2,2">
+                            <Border.BorderBrush>
+                                <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+                            </Border.BorderBrush>
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1"
+                                   MappingMode="RelativeToBoundingBox"
+                                   StartPoint="0.5,0">
+                                    <GradientStop Color="{DynamicResource ContentAreaColorLight}"
+                              Offset="0" />
+                                    <GradientStop Color="{DynamicResource ContentAreaColorDark}"
+                              Offset="1" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <ContentPresenter Margin="4" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Color x:Key="WindowColor">#FFE8EDF9</Color>
+    <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>
+    <Color x:Key="ContentAreaColorDark">#FF7381F9</Color>
+
+    <Color x:Key="DisabledControlLightColor">#FFE8EDF9</Color>
+    <Color x:Key="DisabledControlDarkColor">#FFC5CBF9</Color>
+    <Color x:Key="DisabledForegroundColor">#FF888888</Color>
+
+    <Color x:Key="SelectedBackgroundColor">#FFC5CBF9</Color>
+    <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
+
+    <Color x:Key="ControlLightColor">White</Color>
+    <Color x:Key="ControlMediumColor">#FF7381F9</Color>
+    <Color x:Key="ControlDarkColor">#FF211AA9</Color>
+
+    <Color x:Key="ControlMouseOverColor">#FF3843C4</Color>
+    <Color x:Key="ControlPressedColor">#FF211AA9</Color>
+
+
+    <Color x:Key="GlyphColor">#FF444444</Color>
+    <Color x:Key="GlyphMouseOver">sc#1, 0.004391443, 0.002428215, 0.242281124</Color>
+
+    <!--Border colors-->
+    <Color x:Key="BorderLightColor">#FFCCCCCC</Color>
+    <Color x:Key="BorderMediumColor">#FF888888</Color>
+    <Color x:Key="BorderDarkColor">#FF444444</Color>
+
+    <Color x:Key="PressedBorderLightColor">#FF888888</Color>
+    <Color x:Key="PressedBorderDarkColor">#FF444444</Color>
+
+    <Color x:Key="DisabledBorderLightColor">#FFAAAAAA</Color>
+    <Color x:Key="DisabledBorderDarkColor">#FF888888</Color>
+
+    <Color x:Key="DefaultBorderBrushDarkColor">Black</Color>
+
+    <!--Control-specific resources.-->
+    <Color x:Key="HeaderTopColor">#FFC5CBF9</Color>
+    <Color x:Key="DatagridCurrentCellBorderColor">Black</Color>
+    <Color x:Key="SliderTrackDarkColor">#FFC5CBF9</Color>
+
+    <Color x:Key="NavButtonFrameColor">#FF3843C4</Color>
+
+    <LinearGradientBrush x:Key="MenuPopupBrush"
+                     EndPoint="0.5,1"
+                     StartPoint="0.5,0">
+        <GradientStop Color="{DynamicResource ControlLightColor}"
+                Offset="0" />
+        <GradientStop Color="{DynamicResource ControlMediumColor}"
+                Offset="0.5" />
+        <GradientStop Color="{DynamicResource ControlLightColor}"
+                Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ProgressBarIndicatorAnimatedFill"
+                     StartPoint="0,0"
+                     EndPoint="1,0">
+        <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#000000FF"
+                    Offset="0" />
+                <GradientStop Color="#600000FF"
+                    Offset="0.4" />
+                <GradientStop Color="#600000FF"
+                    Offset="0.6" />
+                <GradientStop Color="#000000FF"
+                    Offset="1" />
+            </GradientStopCollection>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
 </ResourceDictionary>

@@ -13,21 +13,21 @@
 	</Style>
 	<LinearGradientBrush x:Key="ButtonNormalBackgroundFill" EndPoint="0.5,1" StartPoint="0.5,0">
 		<GradientStop Color="#FFFFFFFF" Offset="0"/>
-		<GradientStop Color="#FFF0F0EA" Offset="0.9"/>
+		<GradientStop Color="#FFF0F0EA" Offset="0.5"/>
 	</LinearGradientBrush>
 	<SolidColorBrush x:Key="ButtonBorder" Color="#FF003C74"/>
 	<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
 		<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
-		<Setter Property="Background">
-			<Setter.Value>
-				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-					<GradientStop Color="#FF797977" Offset="0"/>
-					<GradientStop Color="#FF979793" Offset="1"/>
-					<GradientStop Color="#FF272725" Offset="0.522"/>
-				</LinearGradientBrush>
-			</Setter.Value>
-		</Setter>
-		<Setter Property="BorderBrush" Value="#FF414242"/>
+		<Setter Property="Background" >
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0EA" Offset="0"/>
+                    <GradientStop Color="#FF579793" Offset="1"/>
+                    <GradientStop Color="#FF0C89E2" Offset="0.522"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+		<Setter Property="BorderBrush" Value="#FF014242"/>
 		<Setter Property="Foreground" Value="#FFFFFFFF"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
 		<Setter Property="VerticalContentAlignment" Value="Center"/>
