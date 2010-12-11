@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DrawingBrush x:Key="Min" Stretch="Fill">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<DrawingGroup>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1.33333,0,0,1.33333,-2.03451e-005,2.54313e-006"/>
+						</DrawingGroup.Transform>
+						<DrawingGroup.Children>
+                            <ImageDrawing ImageSource="/Miku.Client;component/Dictionarys/Images/S_image1.png" Rect="0,0,21,21"/>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+    <Style x:Key="MinStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
+                            </Border.BitmapEffect>
+                            <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                                <Rectangle.Fill>Transparent</Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Rectangle x:Name="outer" Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="DarkOliveGreen"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5" Fill="{StaticResource  Min}">
+                        </Rectangle>                        
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".9" ScaleY=".9"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <DrawingBrush x:Key="Exit" Stretch="Fill">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<DrawingGroup>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1.33333,0,0,1.33333,60,2.54313e-006"/>
+						</DrawingGroup.Transform>
+						<DrawingGroup.Children>
+                            <ImageDrawing ImageSource="/Miku.Client;component/Dictionarys/Images/S_image2.png" Rect="0,0,25,23"/>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+    <Style x:Key="ExitStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
+                            </Border.BitmapEffect>
+                            <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                                <Rectangle.Fill>Transparent</Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Rectangle x:Name="outer" Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="DarkOliveGreen"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5" Fill="{StaticResource  Exit}">
+                        </Rectangle>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".9" ScaleY=".9"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <DrawingBrush x:Key="Max" Stretch="Fill">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<DrawingGroup>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1.33333,0,0,1.33333,28,2.54313e-006"/>
+						</DrawingGroup.Transform>
+						<DrawingGroup.Children>
+                            <ImageDrawing ImageSource="/Miku.Client;component/Dictionarys/Images/S_image3.png" Rect="0,0,24,23"/>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+    <Style x:Key="MaxStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
+                            </Border.BitmapEffect>
+                            <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                                <Rectangle.Fill>Transparent</Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Rectangle x:Name="outer" Width="26" Height="23" RadiusY="3.5" RadiusX="3.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="DarkOliveGreen"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Width="26" Height="23" RadiusY="3.5" RadiusX="3.5" Fill="{StaticResource  Max}">
+                        </Rectangle>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".9" ScaleY=".9"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <DrawingBrush x:Key="Contrct" Stretch="Uniform">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <ImageDrawing ImageSource="/Miku.Client;component/Dictionarys/Images/EM_image0.png" Rect="0,0,91,71"/>
+                    <DrawingGroup ClipGeometry="F1 M 9.41959,6.37027L 81.419,6.37027C 83.0758,6.37027 84.419,7.71347 84.419,9.37033L 84.419,61.8703C 84.419,63.5272 83.0758,64.8703 81.419,64.8703L 9.41959,64.8703C 7.76273,64.8703 6.41965,63.5272 6.41965,61.8703L 6.41965,9.37033C 6.41965,7.71347 7.76273,6.37027 9.41959,6.37027 Z ">
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Geometry="F1 M -26.58,80.5956L 45.42,27.6444L 117.42,80.5956">
+                                <GeometryDrawing.Pen>
+                                    <Pen Thickness="2" LineJoin="Round" Brush="#FFED9302"/>
+                                </GeometryDrawing.Pen>
+                                <GeometryDrawing.Brush>
+                                    <LinearGradientBrush StartPoint="-0.00694445,0.5" EndPoint="1.00694,0.5">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="#FFE9BF14" Offset="0"/>
+                                            <GradientStop Color="#FFFAE27F" Offset="1"/>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                            <GeometryDrawing Geometry="F1 M 45.4199,41.62L 99.4199,-0.380005">
+                                <GeometryDrawing.Pen>
+                                    <Pen Thickness="2" LineJoin="Round" Brush="#FFED9302"/>
+                                </GeometryDrawing.Pen>
+                                <GeometryDrawing.Brush>
+                                    <LinearGradientBrush StartPoint="-0.0185185,0.500001" EndPoint="1.01852,0.500001">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="#FFE9BF14" Offset="0"/>
+                                            <GradientStop Color="#FFFAE27F" Offset="1"/>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                            <GeometryDrawing Geometry="F1 M 45.7333,-13.38C 68.377,-13.38 86.7333,-5.32114 86.7333,4.62C 86.7333,14.5611 68.377,22.62 45.7333,22.62C 23.0896,22.62 4.73331,14.5611 4.73331,4.62C 4.73331,-5.32114 23.0896,-13.38 45.7333,-13.38 Z ">
+                                <GeometryDrawing.Brush>
+                                    <LinearGradientBrush StartPoint="0.538618,0.497216" EndPoint="0.538618,1.01436">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="#CDFFFFFF" Offset="0"/>
+                                            <GradientStop Color="#00E8FBFF" Offset="1"/>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                    </DrawingGroup>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <Style x:Key="ContrctStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
+                            </Border.BitmapEffect>
+                            <Rectangle Width="80" Height="60" RadiusY="3.5" RadiusX="3.5">
+                                <Rectangle.Fill>Red</Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Rectangle x:Name="outer" Width="79" Height="59" RadiusY="3.5" RadiusX="3.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="Silver"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Rectangle Width="78" Height="58" RadiusY="3.5" RadiusX="3.5" Fill="{StaticResource  Contrct}">
+                        </Rectangle>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".9" ScaleY=".9"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <DrawingBrush x:Key="Helper" Stretch="Fill">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="F1 M 31.3,1.10178C 47.8686,1.10178 61.3,14.5332 61.3,31.1018C 61.3,47.6703 47.8686,61.1018 31.3,61.1018C 14.7315,61.1018 1.3,47.6703 1.3,31.1018C 1.3,14.5332 14.7314,1.10178 31.3,1.10178 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="2" LineJoin="Round" Brush="#FF9EACCE"/>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0.495708,-0.0023997" EndPoint="0.495708,1.025">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF48567D" Offset="0.0228311"/>
+                                    <GradientStop Color="#FFA0B8E7" Offset="0.452055"/>
+                                    <GradientStop Color="#FFFFFFFF" Offset="0.990868"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                    <DrawingGroup ClipGeometry="F1 M 31.3,1.10178C 47.8686,1.10178 61.3,14.5332 61.3,31.1018C 61.3,47.6703 47.8686,61.1018 31.3,61.1018C 14.7315,61.1018 1.30003,47.6703 1.30003,31.1018C 1.30003,14.5332 14.7315,1.10178 31.3,1.10178 Z ">
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Geometry="F1 M 31.3,28.26C 8.65633,28.26 -9.7,20.2011 -9.7,10.26C -9.7,0.318878 8.65636,-7.74002 31.3,-7.74002">
+                                <GeometryDrawing.Brush>
+                                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1.55228,0.5">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Color="#CDFFFFFF" Offset="0"/>
+                                            <GradientStop Color="#00E8FBFF" Offset="1"/>
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                        </DrawingGroup.Children>
+                    </DrawingGroup>
+                    <GeometryDrawing Geometry="F1 M 25.1999,42.4533C 24.9848,41.8954 24.8185,41.2669 24.7008,40.5678C 24.5832,39.8688 24.5244,39.2067 24.5244,38.5815C 24.5244,37.5935 24.6218,36.6927 24.8168,35.8794C 25.0117,35.066 25.3024,34.298 25.6889,33.5754C 26.0754,32.8529 26.5611,32.1656 27.1459,31.5135C 27.7307,30.8615 28.4096,30.2129 29.1826,29.5675C 30.0027,28.8752 30.7202,28.235 31.3353,27.6468C 31.9503,27.0586 32.4746,26.4688 32.9082,25.8772C 33.3418,25.2857 33.6661,24.6723 33.8812,24.0371C 34.0963,23.4019 34.2039,22.6978 34.2039,21.9248C 34.2039,21.2593 34.0845,20.6425 33.8459,20.0746C 33.6073,19.5066 33.2678,19.0175 32.8275,18.6075C 32.3873,18.1975 31.8495,17.8748 31.2143,17.6396C 30.5791,17.4043 29.8716,17.2867 29.0919,17.2867C 27.4114,17.2867 25.6671,17.6597 23.8589,18.4059C 22.0507,19.152 20.3366,20.2846 18.7167,21.8038L 18.7167,12.4167C 20.3434,11.4555 22.1162,10.7362 24.0353,10.2589C 25.9544,9.78171 27.9391,9.54312 29.9892,9.54312C 31.952,9.54312 33.777,9.75815 35.4642,10.1884C 37.1514,10.6186 38.6235,11.2975 39.8805,12.2251C 41.1375,13.1527 42.1189,14.3357 42.8246,15.7743C 43.5305,17.2127 43.8833,18.9436 43.8833,20.9669C 43.8833,22.2508 43.7388,23.4137 43.4498,24.4555C 43.1607,25.4975 42.7389,26.4805 42.1844,27.4048C 41.6298,28.329 40.9408,29.2163 40.1174,30.0666C 39.294,30.917 38.3445,31.7958 37.269,32.7033C 36.5498,33.315 35.9162,33.883 35.3684,34.4073C 34.8206,34.9315 34.3669,35.4525 34.0072,35.9701C 33.6476,36.4877 33.3754,37.0355 33.1905,37.6136C 33.0057,38.1917 32.9132,38.8471 32.9132,39.5797C 32.9132,40.0839 32.9805,40.5998 33.1149,41.1275C 33.2494,41.6551 33.4342,42.0971 33.6695,42.4533L 25.1999,42.4533 Z M 29.7372,56.0047C 28.0567,56.0047 26.6585,55.5039 25.5427,54.5023C 24.4336,53.4604 23.8791,52.2303 23.8791,50.812C 23.8791,49.3534 24.4336,48.1333 25.5427,47.1519C 26.6585,46.1706 28.0567,45.6798 29.7372,45.6798C 31.3907,45.6798 32.7654,46.1706 33.861,47.1519C 34.95,48.1131 35.4944,49.3332 35.4944,50.812C 35.4944,52.311 34.9601,53.5512 33.8913,54.5326C 32.7956,55.5139 31.4109,56.0047 29.7372,56.0047 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen LineJoin="Round" Brush="#CD3E4C0C"/>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0.447383,0.00832604" EndPoint="0.447383,0.793193">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#CD3B5000" Offset="0"/>
+                                    <GradientStop Color="#CD879A00" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>     
+    <Style x:Key="HelperStyle" TargetType="Button" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border x:Name="back" Opacity="0.8" CornerRadius="2">
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect Opacity="0.8" GlowSize="0" GlowColor="Red" />
+                            </Border.BitmapEffect>
+                            <Ellipse Width="80" Height="80">
+                                <Ellipse.Fill>Green</Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        <Ellipse x:Name="outer" Width="78" Height="78">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Offset="0" Color="DarkOliveGreen"/>
+                                    <GradientStop Offset="1" Color="Azure"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse Width="75" Height="75"  Fill="{StaticResource  Helper}">
+                        </Ellipse>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation To="10" Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation To="#4FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation To="#3FFF" BeginTime="0:0:0.2" Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetName="back" 
+                                                         Storyboard.TargetProperty="(Border.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)" />
+                                        <ColorAnimation Duration="0:0:0.2" Storyboard.TargetName="outer" 
+                                                        Storyboard.TargetProperty="(Ellipse.Fill).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX=".9" ScaleY=".9"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="RenderTransformOrigin" Value=".5,.5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

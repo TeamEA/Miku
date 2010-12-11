@@ -1,0 +1,14 @@
+﻿<Window x:Class="Miku.Client.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="1" Height="501" Width="535" Name="View" Loaded="MainForm_Loaded" Closed="MainForm_Closed">
+    <Grid>
+        <ListBox Height="287" HorizontalAlignment="Left" Margin="12,12,0,0" Name="listBoxActions" VerticalAlignment="Top" Width="479" />
+        <Button Content="playback" Height="23" HorizontalAlignment="Left" Margin="209,373,0,0" Name="btnPlayback" VerticalAlignment="Top" Width="75" Click="btnPlayback_Click" />
+        <Button Content="StartRecord" Height="23" HorizontalAlignment="Left" Margin="21,373,0,0" Name="btnStartRecord" VerticalAlignment="Top" Width="75" Click="btnStartRecord_Click" />
+        <Button Content="StopRecord" Height="23" HorizontalAlignment="Right" Margin="0,373,323,0" Name="btnStopRecord" VerticalAlignment="Top" Width="75" Click="btnStopRecord_Click" />
+        <Button Content="Clear" Height="23" HorizontalAlignment="Left" Margin="310,373,0,0" Name="btnClear" VerticalAlignment="Top" Width="75" Click="btnClear_Click" />
+        <Button Content="Simulate" Height="23" HorizontalAlignment="Left" Margin="406,373,0,0" Name="btnSimulate" VerticalAlignment="Top" Width="75" Click="btnSimulate_Click" />
+        <Button Content="SimulateRelative" Height="23" HorizontalAlignment="Left" Margin="376,318,0,0" Name="btnSimulateRelative" VerticalAlignment="Top" Width="105" Click="btnSimulateRelative_Click" />
+    </Grid>
+</Window>

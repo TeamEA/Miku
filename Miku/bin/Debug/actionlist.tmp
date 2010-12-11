@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Actions>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(864,324)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="2141">
+    <Position>(864,324)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(864,323)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(863,323)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(860,323)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(851,322)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(839,320)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(823,318)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(802,315)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(777,313)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(753,310)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(726,305)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(696,301)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(662,297)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(627,292)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(595,287)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(560,282)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(530,277)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(501,272)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(476,264)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(453,258)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(441,254)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(431,251)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(425,248)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(423,247)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(424,246)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(430,244)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(444,243)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(465,243)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(499,243)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(542,251)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(596,259)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(659,274)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(725,288)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(781,305)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(836,323)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(887,346)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(928,365)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(950,379)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(963,391)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(968,402)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(969,413)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(968,424)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(957,436)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(929,455)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(893,468)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(840,480)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(792,486)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(739,486)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(684,486)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(629,486)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(576,485)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(521,477)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(467,469)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(415,459)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(369,449)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(335,439)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(312,428)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(299,422)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(294,418)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(293,416)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(293,413)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(293,408)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(298,402)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(306,394)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(315,390)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(328,384)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(339,381)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(353,377)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(365,375)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(377,373)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(388,372)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(398,371)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(406,370)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(412,369)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="15">
+    <Position>(416,369)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="0">
+    <Position>(419,369)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="MouseAct" DelayTime="16">
+    <Position>(420,369)</Position>
+    <MouseEvent>WM_MOUSEMOVE</MouseEvent>
+  </Action>
+  <Action Type="KeyboardAct" DelayTime="31">
+    <KeyData FriendlyName="F10">121</KeyData>
+    <KeyEvent>WM_KeyDown</KeyEvent>
+  </Action>
+</Actions>

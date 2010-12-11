@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DrawingBrush x:Key="save" Stretch="Fill">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing Geometry="F1 M 31.0067,1.10738C 47.5753,1.10738 61.0067,14.5388 61.0067,31.1074C 61.0067,47.6759 47.5752,61.1074 31.0067,61.1074C 14.4381,61.1074 1.00671,47.6759 1.00671,31.1074C 1.00671,14.5388 14.4381,1.10738 31.0067,1.10738 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="2" LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Brush>
+							<LinearGradientBrush StartPoint="0.495708,-0.0023997" EndPoint="0.495708,1.025">
+								<LinearGradientBrush.GradientStops>
+									<GradientStop Color="#FF48567D" Offset="0.0228311"/>
+									<GradientStop Color="#FFA0B8E7" Offset="0.452055"/>
+									<GradientStop Color="#FFFFFFFF" Offset="0.990868"/>
+								</LinearGradientBrush.GradientStops>
+							</LinearGradientBrush>
+						</GeometryDrawing.Brush>
+					</GeometryDrawing>
+					<DrawingGroup ClipGeometry="F1 M 31.0067,1.10739C 47.5753,1.10739 61.0067,14.5388 61.0067,31.1074C 61.0067,47.6759 47.5752,61.1074 31.0067,61.1074C 14.4381,61.1074 1.00671,47.6759 1.00671,31.1074C 1.00671,14.5388 14.4381,1.10739 31.0067,1.10739 Z ">
+						<DrawingGroup.Children>
+							<GeometryDrawing Geometry="F1 M 31.0067,-7.73441C 53.6504,-7.73441 72.0067,0.324486 72.0067,10.2656C 72.0067,20.2067 53.6504,28.2656 31.0067,28.2656C 8.36304,28.2656 -9.99329,20.2067 -9.99329,10.2656C -9.99329,0.324486 8.36304,-7.73441 31.0067,-7.73441 Z ">
+								<GeometryDrawing.Brush>
+									<LinearGradientBrush StartPoint="0.538618,0.303839" EndPoint="0.538618,1.01989">
+										<LinearGradientBrush.GradientStops>
+											<GradientStop Color="#CDFFFFFF" Offset="0"/>
+											<GradientStop Color="#00E8FBFF" Offset="1"/>
+										</LinearGradientBrush.GradientStops>
+									</LinearGradientBrush>
+								</GeometryDrawing.Brush>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+					<GeometryDrawing Brush="#FF0097FF" Geometry="F1 M 14.12,13.12L 50.12,13.12L 50.12,47.12L 14.12,47.12L 14.12,13.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="2" LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M 21.12,15.12L 43.12,15.12L 43.12,28.12L 21.12,28.12L 21.12,15.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="2" LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FF212424" Geometry="F1 M 25.12,33.12L 40.12,33.12L 40.12,44.12L 25.12,44.12L 25.12,33.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFB1C2C2" Geometry="F1 M 28.12,35.12L 39.12,35.12L 39.12,44.12L 28.12,44.12L 28.12,35.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFD0DEDE" Geometry="F1 M 30.12,36.12L 38.12,36.12L 38.12,42.12L 30.12,42.12L 30.12,36.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FF424242" Geometry="F1 M 30.12,36.12L 36.12,36.12L 36.12,40.12L 30.12,40.12L 30.12,36.12 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="0.5" LineJoin="Round" Brush="#FF9EACCE"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+</ResourceDictionary>

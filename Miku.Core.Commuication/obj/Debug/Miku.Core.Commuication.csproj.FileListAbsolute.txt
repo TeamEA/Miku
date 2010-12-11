@@ -1,0 +1,5 @@
+G:\Team\Miku\Miku\Miku.Core.Commuication\bin\Debug\Miku.Core.Commuication.dll
+G:\Team\Miku\Miku\Miku.Core.Commuication\bin\Debug\Miku.Core.Commuication.pdb
+G:\Team\Miku\Miku\Miku.Core.Commuication\obj\Debug\ResolveAssemblyReference.cache
+G:\Team\Miku\Miku\Miku.Core.Commuication\obj\Debug\Miku.Core.Commuication.dll
+G:\Team\Miku\Miku\Miku.Core.Commuication\obj\Debug\Miku.Core.Commuication.pdb

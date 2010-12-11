@@ -1,0 +1,5 @@
+G:\Team\Miku\Miku\Miku.DAL\bin\Debug\Miku.DAL.dll
+G:\Team\Miku\Miku\Miku.DAL\bin\Debug\Miku.DAL.pdb
+G:\Team\Miku\Miku\Miku.DAL\obj\Debug\ResolveAssemblyReference.cache
+G:\Team\Miku\Miku\Miku.DAL\obj\Debug\Miku.DAL.dll
+G:\Team\Miku\Miku\Miku.DAL\obj\Debug\Miku.DAL.pdb
