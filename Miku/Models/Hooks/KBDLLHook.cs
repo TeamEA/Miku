@@ -23,7 +23,7 @@ namespace Miku.Client.Models.Hooks
         public int time;//Specifies the time stamp for this message
         public int dwExtraInfo;
     }
-
+    
     public delegate void KeyboardEventHandler(KeyboardEvents keyEvent, System.Windows.Forms.Keys keyData,int time);
 
     public class KBDLLHook : Hook

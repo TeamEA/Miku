@@ -18,6 +18,9 @@ namespace Miku.Client.Models.ActionStrategies
         private KBMLLHook kbmHOOK;
         private KBMSimulator kbmSimulator;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public KBMActionStrategy()
             : this(Marshal.GetHINSTANCE(Assembly.GetExecutingAssembly().GetModules()[0]))
         {
