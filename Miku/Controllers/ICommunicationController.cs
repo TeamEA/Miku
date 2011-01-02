@@ -7,7 +7,11 @@ namespace Miku.Client.Controllers
 {
     public interface ICommunicationController
     {
-        void RequestRecieveMsg();
-        void RequestRecieveFile();
+        void RequestSendMsg();
+        void RequestSendFile();
+        void RequestRemoteControl(); 
+        void RequestAcceptRemoteControl();
+        void RequestPlayRemoteScript();
+        void RequestRegisterToServer();
     }
 }

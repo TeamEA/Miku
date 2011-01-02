@@ -12,7 +12,7 @@ namespace Miku.Client.Models.Hooks
         WM_MOUSEMOVE = 0x0200,
         WM_LBUTTONDOWN = 0x0201,
         WM_LBUTTONUP = 0x0202,
-        WM_LBUTTONDBLCLK = 0x0203, 
+        WM_LBUTTONDBLCLK = 0x0203,
         WM_RBUTTONDOWN = 0x0204,
         WM_RBUTTONUP = 0x0205,
         WM_RBUTTONDBLCLK = 0x0206,
@@ -22,17 +22,18 @@ namespace Miku.Client.Models.Hooks
         WM_MOUSEWHEEL = 0x020A,
     }
 
+    [Serializable]
     [StructLayout(LayoutKind.Sequential)]
-    public struct MSLLHOOKSTRUCT 
+    public struct MSLLHOOKSTRUCT
     {
-        public Win32API.POINT pt; 
+        public Win32API.POINT pt;
         public int mouseData;
         public int flag;
         public int time;
         public int dwExtraInfo;
     }
 
-    public delegate void MouseEventHandler(MouseEvents mouseEvent,MSLLHOOKSTRUCT mouse,int delayTime);
+    public delegate void MouseEventHandler(MouseEvents mouseEvent, MSLLHOOKSTRUCT mouse, int delayTime);
 
     public class MSLLHook : Hook
     {

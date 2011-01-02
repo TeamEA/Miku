@@ -9,15 +9,30 @@ namespace Miku.Client.Helpers
 {
     class ListBoxItemsHelper
     {
-        public static void AddListBixItem(int num,string strText, ListBox listBox)
+
+        /// <summary>
+        /// Adds the list bix item.
+        /// </summary>
+        /// <param name="strText">The STR text.</param>
+        /// <param name="listBox">The list box.</param>
+        /// <param name="color">The color.</param>
+        public static void AddListBixItem(string strText, ListBox listBox, Color color)
         {
             StackPanel stackPanel = new StackPanel();
             stackPanel.Height = 25;
             TextBlock textBlock = new TextBlock();
-            textBlock.Text = ">>  " + strText; 
+            textBlock.Text = ">>  " + strText;
+            textBlock.FontSize = 18;
+            textBlock.Foreground = new SolidColorBrush(color);
             stackPanel.Children.Add(textBlock);
             listBox.Items.Add(stackPanel);
         }
+
+        /// <summary>
+        /// Adds the list bix item.
+        /// </summary>
+        /// <param name="strText">The STR text.</param>
+        /// <param name="listBox">The list box.</param>
         public static void AddListBixItem(string[] strText, ListBox listBox)
         {
             if (strText.Length == 3)

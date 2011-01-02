@@ -52,12 +52,15 @@ namespace Miku.Client.Models.Recorders
 
         /// <summary>
         /// Gets the action datas.
+        /// 之所以这个函数很长，是因为我在从一个结构化的Xml文件中读取数据局
+        /// 分开写感觉结构会更不清晰，这是一个低版本的获取数据的类，我们在.net的高版本中改进了它，但是
+        /// 为了兼容低版本的.net，我们保留了这个类。
         /// </summary>
         /// <returns></returns>
         public Win32API.KeyEvent[] GetDatas()
         {
             List<Win32API.KeyEvent> datas = new List<Win32API.KeyEvent>();
-            XmlReader reader = XmlReader.Create(this.actionsListTmpFileName);
+            XmlReader reader = XmlReader.Create(this.actionsListFileName);
             while (reader.Read())
             {
 
@@ -92,23 +95,7 @@ namespace Miku.Client.Models.Recorders
                                 }
                                 else
                                 {
-                                    while (reader.Read())
-                                    {
-                                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "KeyEvent")
-                                        {
-                                            string eventName = reader.ReadInnerXml();
-                                            if (eventName == KeyboardEvents.WM_KeyUp.ToString())
-                                            {
-                                                keyEvent.dwFlags = Win32API.KBEventFlag.KeyUp;
-                                            }
-                                            else if (eventName == KeyboardEvents.WM_KeyDown.ToString())
-                                            {
-                                                keyEvent.dwFlags = Win32API.KBEventFlag.KeyDown;
-                                            }
-                                            break;
-                                        }
-
-                                    }
+                                    keyEvent = JudgeKeyevent(reader, keyEvent);
                                     break;
                                 }
 
@@ -125,6 +112,28 @@ namespace Miku.Client.Models.Recorders
             reader.Close();
 
             return datas.ToArray();
+        }
+
+        private Win32API.KeyEvent JudgeKeyevent(XmlReader reader, Win32API.KeyEvent keyEvent)
+        {
+            while (reader.Read())
+            {
+                if (reader.NodeType == XmlNodeType.Element && reader.Name == "KeyEvent")
+                {
+                    string eventName = reader.ReadInnerXml();
+                    if (eventName == KeyboardEvents.WM_KeyUp.ToString())
+                    {
+                        keyEvent.dwFlags = Win32API.KBEventFlag.KeyUp;
+                    }
+                    else if (eventName == KeyboardEvents.WM_KeyDown.ToString())
+                    {
+                        keyEvent.dwFlags = Win32API.KBEventFlag.KeyDown;
+                    }
+                    break;
+                }
+
+            }
+            return keyEvent;
         }
     }
 }

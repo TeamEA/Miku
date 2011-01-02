@@ -14,8 +14,10 @@ namespace Miku.Client.Models.Hooks
         WM_SystemKeyDown = 0x0104,
         WM_SystemKeyUp = 0x0105
     }
+
+    [Serializable]
     [StructLayout(LayoutKind.Sequential)]
-    public struct KBDLLHOOKSTRUCT 
+    public struct KBDLLHOOKSTRUCT
     {
         public int vkCode; //Specifies a virtual-key code. The code must be a value in the range 1 to 254. 
         public int scanCode; //Specifies a hardware scan code for the key.
@@ -23,8 +25,8 @@ namespace Miku.Client.Models.Hooks
         public int time;//Specifies the time stamp for this message
         public int dwExtraInfo;
     }
-    
-    public delegate void KeyboardEventHandler(KeyboardEvents keyEvent, System.Windows.Forms.Keys keyData,int time);
+
+    public delegate void KeyboardEventHandler(KeyboardEvents keyEvent, System.Windows.Forms.Keys keyData, int time);
 
     public class KBDLLHook : Hook
     {
@@ -67,7 +69,7 @@ namespace Miku.Client.Models.Hooks
                 }
                 else
                 {
-                    KeyboardEvent(kEvent, keyData, MyKey.time-previousHookTimestamp);
+                    KeyboardEvent(kEvent, keyData, MyKey.time - previousHookTimestamp);
                     previousHookTimestamp = MyKey.time;
                 }
             }

@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
 
 namespace Miku.Core.Communication
 {
     public enum CommunicationCmds
     {
         //None,
-        //Registering,
+        Registering,
         //Registered,
         //Logining,
         //Logined,
         SendToOne,
+        RequestSendFile,
         //SendToAll,
         //UserList,
         //UpdateState,
@@ -20,6 +22,7 @@ namespace Miku.Core.Communication
         //Videoing,
         //VideoClose,
         //Close
+        RequestFile
     }
 
     public enum SendingStates
@@ -35,7 +38,24 @@ namespace Miku.Core.Communication
         SendNone,
         SendCommad,
         SendMsg,
-        SendFile
+        SendFile,
+        SendControlCommand,
+        SendControlImage
+    }
+
+    [Serializable]
+    public class RegisterData
+    {
+        public IPEndPoint ClientIPEndPoint { get; set; }
+        public string UserName { get; set; }
+    }
+
+    [Serializable]
+    public class FileInfo
+    {
+        public string FileName { get; set; }
+        public string SenderName { get; set; }
+        public string RecieverName { get; set; }
     }
 
     [Serializable]
@@ -46,6 +66,8 @@ namespace Miku.Core.Communication
         public CommunicationCmds CommunicatinCmds { get; set; }
         public byte[] Datas { get; set; }
 
-        public string FileName { get; set; }
+        public FileInfo FileInfo { get; set; }
+
+        public string TargetUserName { get; set; }
     }
 }

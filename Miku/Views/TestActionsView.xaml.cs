@@ -243,5 +243,11 @@ namespace Miku.Client.Views
         {
             throw new NotImplementedException();
         }
+
+
+        public void ResponsePlaybackExistFile(ref string filePath)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

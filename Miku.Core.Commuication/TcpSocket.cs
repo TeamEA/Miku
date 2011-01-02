@@ -137,8 +137,8 @@ namespace Miku.Core.Communication
         {
             while (active)
             {
-                try
-                {
+                //try
+                //{
                     //将获取的远程消息转换成二进制流
                     TcpClient client = tcpListener.AcceptTcpClient();
                     NetworkStream ns = client.GetStream();
@@ -154,7 +154,7 @@ namespace Miku.Core.Communication
                             {
                                 memoryStream.Write(bytes, 0, i);
                             }
-
+                            
                             //利用当前控件的DataArrival事件将消息发给远程计算机
                             DataArrival(memoryStream.ToArray(), ServerEndPoint.Address, ServerEndPoint.Port);
                         }
@@ -163,13 +163,13 @@ namespace Miku.Core.Communication
 
                     }
                     Thread.Sleep(25);
-                }
-                catch (SocketException e)
-                {
-                    //Active = false;
-                    MessageBox.Show(e.ErrorCode.ToString());
-                    //Active = true;
-                }
+                //}
+                //catch (SocketException e)
+                //{
+                //    //Active = false;
+                //    MessageBox.Show(e.ErrorCode.ToString());
+                //    //Active = true;
+                //}
                 //catch (Exception e)
                 //{
                 //    //Active = false;
@@ -183,14 +183,14 @@ namespace Miku.Core.Communication
         {
             //从异步状态ar.AsyncState中，获取委托对象
             DataArrivalEventHandler dn = (DataArrivalEventHandler)ar.AsyncState;
-            //一定要EndInvoke，否则你的下场很惨
+            //一定要EndInvoke
             dn.EndInvoke(ar);
         }
 
         public void Send(IPEndPoint ipEndPoint, byte[] Data)
         {
-            try
-            {
+            //try
+            //{
                 //将消息发给远程计算机
                 TcpServer = new TcpClient();
                 TcpServer.Connect(ipEndPoint);
@@ -201,17 +201,17 @@ namespace Miku.Core.Communication
                     ns.Close();
                     TcpServer.Close();
                 }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    MessageBox.Show(e.ToString());
+            //}
         }
 
         public void Send(System.Net.IPAddress Host, int Port, byte[] Data)
         {
-            try
-            {
+            //try
+            //{
                 //将IP地址和端口号实例化一个IPEndPoint对象
                 IPEndPoint ipEndPoint = new IPEndPoint(Host, Port);
 
@@ -225,11 +225,11 @@ namespace Miku.Core.Communication
                     ns.Close();
                     TcpServer.Close();
                 }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    MessageBox.Show(e.ToString());
+            //}
         }
 
         private void OpenSocket()    //打开socket

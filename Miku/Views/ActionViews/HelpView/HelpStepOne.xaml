@@ -7,7 +7,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="HelpStepOne">
 
-    <Grid>
-        
+    <Grid Height="322" Width="303">
+        <TextBlock Height="240" HorizontalAlignment="Left" Margin="22,36,0,0" Name="textBlock1" VerticalAlignment="Top" Width="252" Text="" />
     </Grid>
 </Page>

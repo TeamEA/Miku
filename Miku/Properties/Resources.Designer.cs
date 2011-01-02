@@ -60,6 +60,13 @@ namespace Miku.Client.Properties {
             }
         }
         
+        internal static System.Drawing.Icon Actions {
+            get {
+                object obj = ResourceManager.GetObject("Actions", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap B_image0 {
             get {
                 object obj = ResourceManager.GetObject("B_image0", resourceCulture);
@@ -109,6 +116,13 @@ namespace Miku.Client.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Head {
+            get {
+                object obj = ResourceManager.GetObject("Head", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap L_image0 {
             get {
                 object obj = ResourceManager.GetObject("L_image0", resourceCulture);
@@ -140,6 +154,27 @@ namespace Miku.Client.Properties {
         internal static System.Drawing.Bitmap M_image1 {
             get {
                 object obj = ResourceManager.GetObject("M_image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap O_image0 {
+            get {
+                object obj = ResourceManager.GetObject("O_image0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap OL_image0 {
+            get {
+                object obj = ResourceManager.GetObject("OL_image0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap OL_image1 {
+            get {
+                object obj = ResourceManager.GetObject("OL_image1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

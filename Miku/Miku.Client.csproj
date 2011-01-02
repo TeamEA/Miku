@@ -35,6 +35,8 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -59,6 +61,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="PresentationFramework.Aero" />
     <Reference Include="PresentationFramework.Luna" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -66,6 +70,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -83,18 +88,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Assert\Resources\ApplicationStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationStrings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ActionController.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controllers\CommunicationController.cs" />
     <Compile Include="Controllers\IActionController.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controllers\ICommunicationController.cs" />
+    <Compile Include="Helpers\DestopScreenHelper.cs" />
+    <Compile Include="Helpers\ExceptionHandler\ExceptionLogger.cs" />
     <Compile Include="Helpers\FetionHelper.cs" />
     <Compile Include="Helpers\HotkeyHelper.cs" />
     <Compile Include="Helpers\MailHelper.cs" />
     <Compile Include="Helpers\ListBoxItemsHelper.cs" />
+    <Compile Include="Helpers\ResourceWrapper.cs" />
     <Compile Include="Libs\Win32API.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,11 +115,12 @@
     <Compile Include="Models\ActionStrategies\KBActionStrategy.cs" />
     <Compile Include="Models\ActionStrategies\KBMActionStrategy.cs" />
     <Compile Include="Models\ActionStrategies\MActionStrategy.cs" />
-    <Compile Include="Models\Communication\CommunicationClient.cs" />
+    <Compile Include="Models\ActionStrategies\WarnModeKBMActionStrategy.cs" />
     <Compile Include="Models\Hooks\KBMLLHook.cs" />
     <Compile Include="Models\Hooks\MSLLHook.cs" />
     <Compile Include="Models\Recorders\ActionRecorder.cs" />
     <Compile Include="Models\Recorders\LinqRecorder\ActionRecorderLinq.cs" />
+    <Compile Include="Models\Recorders\IActionRecorder.cs" />
     <Compile Include="Models\Recorders\LinqRecorder\KBActionRecorderLinq.cs" />
     <Compile Include="Models\Recorders\KBMActionRecorder.cs" />
     <Compile Include="Models\Recorders\LinqRecorder\KBMActionRecorderLinq.cs" />
@@ -122,17 +135,32 @@
     <Compile Include="Views\ActionViews\ActionRecordView.xaml.cs">
       <DependentUpon>ActionRecordView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ActionViews\ActionView.xaml.cs">
+      <DependentUpon>ActionView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ActionViews\HelpView\HelpStepOne.xaml.cs">
       <DependentUpon>HelpStepOne.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ActionViews\LoadfileContent.xaml.cs">
+      <DependentUpon>LoadfileContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionViews\MainTipPanel.xaml.cs">
+      <DependentUpon>MainTipPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionViews\MouseRecorder.xaml.cs">
+      <DependentUpon>MouseRecorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionViews\PlaybackContent.xaml.cs">
+      <DependentUpon>PlaybackContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionViews\RecordContent.xaml.cs">
+      <DependentUpon>RecordContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ActionViews\SavefileContent.xaml.cs">
+      <DependentUpon>SavefileContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ICommunicationView.cs" />
     <Compile Include="Views\IActionView.cs" />
-    <Compile Include="Views\MainViews\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TestRemoteCommunicationView.xaml.cs">
-      <DependentUpon>TestRemoteCommunicationView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\UserControl\AboutSystem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +170,14 @@
     <Compile Include="Views\UserControl\YesNoMessageBox.xaml.cs">
       <DependentUpon>YesNoMessageBox.xaml</DependentUpon>
     </Compile>
+    <Page Include="Assert\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assert\XamlResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Dictionarys\Common\exit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -171,8 +207,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Dictionarys\Xamls\Main\DynamicStyle.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Dictionarys\Xamls\Main\Main.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -182,7 +218,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Dictionarys\Xamls\Style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ActionViews\ActionRecordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ActionViews\ActionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,9 +234,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainViews\MainView.xaml">
+    <Page Include="Views\ActionViews\LoadfileContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ActionViews\MainTipPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ActionViews\MouseRecorder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ActionViews\PlaybackContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ActionViews\RecordContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ActionViews\SavefileContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\TestActionsView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -208,10 +272,6 @@
       <DependentUpon>TestActionsView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\TestRemoteCommunicationView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\UserControl\XamlResource\BrushResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -274,6 +334,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Assert\Resources\ApplicationStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplicationStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControl\AboutSystem.resx">
+      <DependentUpon>AboutSystem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Dictionarys\Images\B_image0.png" />
     <Resource Include="Dictionarys\Images\B_image1.png" />
     <Resource Include="Dictionarys\Images\B_image2.png" />
@@ -286,28 +359,52 @@
     <Resource Include="Dictionarys\Images\L_image2.png" />
     <Resource Include="Dictionarys\Images\M_image0.png" />
     <Resource Include="Dictionarys\Images\M_image1.png" />
-    <Resource Include="Dictionarys\Images\S_image1.png" />
-    <Resource Include="Dictionarys\Images\S_image2.png" />
-    <Resource Include="Dictionarys\Images\S_image3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx" />
-    <EmbeddedResource Include="Views\UserControl\AboutSystem.resx">
-      <DependentUpon>AboutSystem.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Dictionarys\Images\OL_image0.png" />
     <Resource Include="Dictionarys\Images\OL_image1.png" />
     <Resource Include="Dictionarys\Images\O_image0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\键鼠动作录制.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <Resource Include="Dictionarys\Images\S_image1.png" />
+    <Resource Include="Dictionarys\Images\S_image2.png" />
+    <Resource Include="Dictionarys\Images\S_image3.png" />
     <Resource Include="Images\051027nature01.jpg" />
     <Resource Include="Images\051027nature02.jpg" />
     <Resource Include="Images\051123Webshots05.jpg" />
+    <Resource Include="Images\键鼠动作录制.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assert\Actions.ico" />
+    <Resource Include="Assert\Images\B_image0.png" />
+    <Resource Include="Assert\Images\B_image1.png" />
+    <Resource Include="Assert\Images\B_image2.png" />
+    <Resource Include="Assert\Images\EM_image0.png" />
+    <Resource Include="Assert\Images\E_image1.png" />
+    <Resource Include="Assert\Images\E_image2.png" />
+    <Resource Include="Assert\Images\E_image3.png" />
+    <Resource Include="Assert\Images\Head.png" />
+    <Resource Include="Assert\Images\L_image0.png" />
+    <Resource Include="Assert\Images\L_image1.png" />
+    <Resource Include="Assert\Images\L_image2.png" />
+    <Resource Include="Assert\Images\M_image0.png" />
+    <Resource Include="Assert\Images\M_image1.png" />
+    <Resource Include="Assert\Images\OL_image0.png" />
+    <Resource Include="Assert\Images\OL_image1.png" />
+    <Resource Include="Assert\Images\O_image0.png" />
+    <Resource Include="Assert\Images\S_image1.png" />
+    <Resource Include="Assert\Images\S_image2.png" />
+    <Resource Include="Assert\Images\S_image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dictionarys\Images\Box_Blue.png" />
+    <Resource Include="Dictionarys\Images\Box_Green.png" />
+    <Resource Include="Dictionarys\Images\Box_Orange.png" />
+    <Resource Include="Dictionarys\Images\Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assert\Images\Backhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assert\Images\document.png" />
+    <Resource Include="Assert\Images\filesaveas.png" />
+    <Resource Include="Assert\Images\video.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

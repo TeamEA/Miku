@@ -48,7 +48,7 @@ namespace Miku.Client.Models.Recorders
         public Win32API.MouseEvent[] GetDatas()
         {
             List<Win32API.MouseEvent> datas = new List<Win32API.MouseEvent>();
-            XmlReader reader = XmlReader.Create(this.actionsListTmpFileName);
+            XmlReader reader = XmlReader.Create(this.actionsListFileName);
             while (reader.Read())
             {
 

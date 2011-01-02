@@ -8,20 +8,21 @@ namespace Miku.Client.Models.Recorders
     /// <summary>
     /// The recorder than records the actions
     /// </summary>
-    public abstract class ActionRecorder
+    public abstract class ActionRecorder:IActionRecorder
     {
         protected XmlWriterSettings xmlWritterSettings;
         protected XmlDocument actionsXmlDoc;
-        protected string actionsListTmpFileName;
+        protected string actionsListFileName;
+        protected const string actionsListTmpFileName = "actionlist.tmp";
 
         public ActionRecorder()
         {
-            actionsListTmpFileName = "actionlist.tmp";
+            actionsListFileName = actionsListTmpFileName;
 
             xmlWritterSettings = new XmlWriterSettings();
             xmlWritterSettings.Indent = true;
             xmlWritterSettings.Encoding = Encoding.UTF8;
-            XmlWriter actionsDocWriter = XmlWriter.Create(actionsListTmpFileName, xmlWritterSettings);
+            XmlWriter actionsDocWriter = XmlWriter.Create(actionsListFileName, xmlWritterSettings);
             actionsDocWriter.WriteStartDocument();
             actionsDocWriter.WriteStartElement("Actions");
             actionsDocWriter.WriteEndElement();
@@ -30,15 +31,23 @@ namespace Miku.Client.Models.Recorders
             actionsDocWriter.Close();
 
             actionsXmlDoc = new XmlDocument();
-            actionsXmlDoc.Load(actionsListTmpFileName);
+            actionsXmlDoc.Load(actionsListFileName);
         }
 
+        #region IActionRecorder
         /// <summary>
         /// Saves the recorded actions.
         /// </summary>
         public void SaveActions()
         {
-            actionsXmlDoc.Save(actionsListTmpFileName);
+            actionsXmlDoc.Save(actionsListFileName);
         }
+
+
+        public void SaveRecordedFileAs(string newFilePath)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
     }
 }

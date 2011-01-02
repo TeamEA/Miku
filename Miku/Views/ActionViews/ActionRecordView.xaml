@@ -1,84 +1,97 @@
 ﻿<Window x:Class="Miku.Client.Views.ActionViews.ActionRecordView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ActionRecordView" Height="440" Width="640" Background="{StaticResource 主界面}" WindowStyle="None" MouseDown="Window_MouseDown"
+        Title="ActionRecordView" Height="440" Width="640" Background="{StaticResource 背景}" WindowStyle="None" MouseDown="Window_MouseDown"
         xmlns:local="clr-namespace:Miku.Client"   WindowStartupLocation="Manual"   Loaded="Window_Loaded" 
         Left="{Binding Source={x:Static local:Properties.Settings.Default}, Path=MainWndLeft, Mode=TwoWay}"
         Top="{Binding Source={x:Static local:Properties.Settings.Default}, Path=MainWndTop, Mode=TwoWay}" >
     <Grid>
-        <StackPanel Height="26" HorizontalAlignment="Right" Margin="0,0,10,0"  VerticalAlignment="Top" Width="78" Orientation="Horizontal">
-            <Button  x:Name="btnMinSize" Height="23" Width="26" Style="{DynamicResource MinStyle}" Click="btnMinSize_Click" />
-            <Button  x:Name="btnMaxSize" Height="23" Width="26" Style="{DynamicResource MaxStyle}" Click="btnMaxSize_Click" />
-            <Button  x:Name="btnExit" Height="23" Width="26" Style="{DynamicResource ExitStyle}" Click="btnExit_Click"/>
-        </StackPanel>
-        <Grid Height="408" Width="620" Margin="10,0,0,0" HorizontalAlignment="Left">            
-            <GroupBox Header="录制对象" Height="184" HorizontalAlignment="Left" Margin="0,74,0,0" Name="录制对象" VerticalAlignment="Top" Width="352" FontSize="20" FontFamily="迷你简小标宋">
-                <GroupBox.Foreground>
-                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
-                        <GradientStop Color="OrangeRed" Offset="0" />
-                        <GradientStop Color="White" Offset="1" />
-                    </LinearGradientBrush>
-                </GroupBox.Foreground>
-                <Grid Height="137">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="44*" />
-                        <ColumnDefinition Width="296*" />
-                    </Grid.ColumnDefinitions>
-                    <RadioButton Content="  Mouse and Keyboard" Name="rdbMouseAndKeyboard"  IsChecked="True" GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,88,0,6" Grid.ColumnSpan="2" />
-                    <RadioButton Content="  Mouse " Name="rdbMouse"   GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,6,-6,90" Grid.ColumnSpan="2" />
-                    <RadioButton Content="  Keyboard " Name="rdbKeyboard"   GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,45,-6,55" Grid.ColumnSpan="2" />
-                </Grid>
-            </GroupBox>
-            <Button x:Name="btnHelp" Height="80" HorizontalAlignment="Left" Margin="382,152,0,0" ToolTip="帮助" 
-                VerticalAlignment="Top" Width="81" Style="{DynamicResource HelperStyle}" Click="btnHelp_Click" Cursor="Help" />
-            <GroupBox Header="功能按钮" Height="153" HorizontalAlignment="Left" Margin="0,256,0,0" Name="功能按钮" VerticalAlignment="Top" Width="620" FontSize="20" FontFamily="迷你简小标宋">
-                <GroupBox.Foreground>
-                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
-                        <GradientStop Color="OrangeRed" Offset="0" />
-                        <GradientStop Color="White" Offset="1" />
-                    </LinearGradientBrush>
-                </GroupBox.Foreground>
-                <StackPanel Height="123" Width="610" Orientation="Horizontal">
-                    <Canvas x:Name="Recording"  Height="57" Width="200">
-                        <Button Name="btnStartRecord" Margin="4,0,2,154" Click="btnStartRecord_Click" 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Silver"  >
+            <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0"  VerticalAlignment="Top" Width="78" Orientation="Horizontal">
+                <Button  x:Name="btnMinSize" Height="23" Width="26" Style="{DynamicResource MinStyle}" Click="btnMinSize_Click" />
+                <Button  x:Name="btnMaxSize" Height="23" Width="26" Style="{DynamicResource MaxStyle}" Click="btnMaxSize_Click" />
+                <Button  x:Name="btnExit" Height="23" Width="26" Style="{DynamicResource ExitStyle}" Click="btnExit_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Background="{StaticResource 主界面}">                
+                <Grid Height="408" Width="620" Margin="10,0,0,0" HorizontalAlignment="Left">
+                    <GroupBox Header="录制对象" Height="184" HorizontalAlignment="Left" Margin="0,74,0,0" Name="录制对象" VerticalAlignment="Top" Width="352" FontSize="20" FontFamily="迷你简小标宋">
+                        <GroupBox.Foreground>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="OrangeRed" Offset="0" />
+                                <GradientStop Color="White" Offset="1" />
+                            </LinearGradientBrush>
+                        </GroupBox.Foreground>
+                        <Grid Height="137">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="44*" />
+                                <ColumnDefinition Width="296*" />
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Content="  Mouse and Keyboard" Name="rdbMouseAndKeyboard"  IsChecked="True" GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,88,0,6" Grid.ColumnSpan="2" />
+                            <RadioButton Content="  Mouse " Name="rdbMouse"   GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,6,-6,90" Grid.ColumnSpan="2" />
+                            <RadioButton Content="  Keyboard " Name="rdbKeyboard"   GroupName="gbActionStrategy" Click="rdb_Click" Margin="6,45,-6,55" Grid.ColumnSpan="2" />
+                            <Button x:Name="btnHelp" Height="80" HorizontalAlignment="Left" Margin="209,24,0,0" ToolTip="帮助" VerticalAlignment="Top" Width="81" Style="{DynamicResource HelperStyle}" Click="btnHelp_Click" Cursor="Help" Grid.Column="1" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="功能按钮" Height="153" HorizontalAlignment="Left" Margin="0,256,0,0" Name="功能按钮" VerticalAlignment="Top" Width="620" FontSize="20" FontFamily="迷你简小标宋">
+                        <GroupBox.Foreground>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="OrangeRed" Offset="0" />
+                                <GradientStop Color="White" Offset="1" />
+                            </LinearGradientBrush>
+                        </GroupBox.Foreground>
+                        <StackPanel Height="123" Width="610" Orientation="Horizontal">
+                            <Canvas x:Name="Recording"  Height="57" Width="200">
+                                <Button Name="btnStartRecord" Margin="4,0,2,154" Click="btnStartRecord_Click" 
                             Style="{DynamicResource RecordingStyle}" ToolTip="动作录制" AllowDrop="True" Width="126" Canvas.Left="53" Canvas.Top="0" Height="49" />
-                        <Rectangle Height="55" HorizontalAlignment="Left" Margin="2,0,0,0" Stroke="Transparent" 
+                                <Rectangle Height="55" HorizontalAlignment="Left" Margin="2,0,0,0" Stroke="Transparent" 
                                VerticalAlignment="Top" Width="55" Fill="{StaticResource RecordLable}" Cursor="Cross" />
-                    </Canvas>
-                    <Canvas x:Name="Playback" Height="57" Width="200" Margin="0,30,0,0" >
-                        <Button Name="btnSaveFile" Margin="6,147,0,0" Click="btnSaveFile_Click" 
+                            </Canvas>
+                            <Canvas x:Name="Playback" Height="57" Width="200" Margin="0,30,0,0" >
+                                <Button Name="btnSaveFile" Margin="6,147,0,0" Click="btnSaveFile_Click" 
                             Style="{DynamicResource SaveStyle}" ToolTip="动作保存" Canvas.Left="48" Canvas.Top="-147" Width="126" />
-                        <Rectangle Height="55" HorizontalAlignment="Left" Stroke="Transparent" 
+                                <Rectangle Height="55" HorizontalAlignment="Left" Stroke="Transparent" 
                                VerticalAlignment="Top" Width="55" Fill="{StaticResource SaveLable}" Cursor="Cross" />
-                    </Canvas>
-                    <Canvas x:Name="SaveRecord" Height="57" Width="200" Margin="0,60,0,0">
-                        <Button Name="btnPlayBack" Margin="6,74,0,80" Click="btnPlayBack_Click" Style="{DynamicResource PlayingStyle}" ToolTip="动作回放" Canvas.Left="51" Canvas.Top="-74" Width="126" />
-                        <Rectangle Height="55" Stroke="Transparent" Width="55" Fill="{StaticResource PlayLable}" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Cross" Canvas.Left="2" />
-                    </Canvas>                    
-                </StackPanel>
-            </GroupBox>
-            <Button x:Name="btnrightExpand" HorizontalAlignment="Left" Margin="580,177,0,0" 
+                            </Canvas>
+                            <Canvas x:Name="SaveRecord" Height="57" Width="200" Margin="0,60,0,0">
+                                <Button Name="btnPlayBack" Margin="6,74,0,80" Click="btnPlayBack_Click" Style="{DynamicResource PlayingStyle}" ToolTip="动作回放" Canvas.Left="51" Canvas.Top="-74" Width="126" />
+                                <Rectangle Height="55" Stroke="Transparent" Width="55" Fill="{StaticResource PlayLable}" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Cross" Canvas.Left="2" />
+                            </Canvas>
+                        </StackPanel>
+                    </GroupBox>
+                    <Button x:Name="btnrightExpand" HorizontalAlignment="Left" Margin="580,177,0,0" 
                  VerticalAlignment="Top" Style="{DynamicResource rightStyle}" Click="btnrightExpand_Click" />
-        </Grid>        
-        <Grid Width="200" Margin="0,0,0,0" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="380"
-              x:Name="Expand">            
-            <GroupBox Header="记录列表"  HorizontalAlignment="Stretch" Margin="10,0,0,50"  Name="记录列表" VerticalAlignment="Stretch" 
+                </Grid>
+            </Grid>
+            <Grid  Grid.Column="1" Width="200" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="380"
+              x:Name="Expand">
+                <GroupBox Header="记录列表"  HorizontalAlignment="Stretch" Margin="10,0,0,50"  Name="记录列表" VerticalAlignment="Stretch" 
                       FontSize="20" FontFamily="迷你简小标宋" Style="{DynamicResource Expand}">
-                <GroupBox.Foreground>
-                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
-                        <GradientStop Color="OrangeRed" Offset="0" />
-                        <GradientStop Color="White" Offset="1" />
-                    </LinearGradientBrush>
-                </GroupBox.Foreground>
-                <ListBox x:Name="lbxRecordList" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionChanged="lbxRecordList_SelectionChanged">
-                    
-                </ListBox>
+                    <GroupBox.Foreground>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="OrangeRed" Offset="0" />
+                            <GradientStop Color="White" Offset="1" />
+                        </LinearGradientBrush>
+                    </GroupBox.Foreground>
+                    <ListBox x:Name="lbxRecordList" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionChanged="lbxRecordList_SelectionChanged">
 
-            </GroupBox>
-            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
-                <Button x:Name="btnleftExpand" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
-                        Style="{DynamicResource leftStyle}" Click="btnleftExpand_Click"></Button>                
-            </Grid>            
+                    </ListBox>
+
+                </GroupBox>
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                    <Button x:Name="btnleftExpand" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                        Style="{DynamicResource leftStyle}" Click="btnleftExpand_Click"></Button>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

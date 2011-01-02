@@ -13,7 +13,7 @@ namespace Miku.Client.Views
         void ResponseStopRecording();
         void ResponseKeepRecording(string recordInfo);
         void ResponseStartPlayback();
-        void ResponseSaveActions(ref string filepath);
-        //void ResponsePlaybackExistFile(ref string filepath);
+        void ResponseSaveActions(ref string filePath);
+        void ResponsePlaybackExistFile(ref string filePath);
     }
 }

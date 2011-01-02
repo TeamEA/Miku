@@ -12,6 +12,7 @@ namespace Miku.Client.Controllers
         void RequestStartRecordActions();
         void RequestStopRecordActions();
         void RequestStartPlayback();
+        void RequestPlaybackExistFile(string filepath);
         void RequestSaveActions();
     }
 }

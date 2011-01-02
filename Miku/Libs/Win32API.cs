@@ -144,6 +144,7 @@ namespace Miku.Client
             KeyDown = 0x0
         }
 
+        [Serializable]
         public struct KeyEvent
         {
             public int bVk;
@@ -155,7 +156,7 @@ namespace Miku.Client
 
         [DllImport("User32.dll", EntryPoint = "mouse_event")]
         public static extern void Mouse_Event(MouseEventFlag flag, int dx, int dy, uint data, UIntPtr extraInfo);
-        
+
         public enum MouseEventFlag : uint
         {
             Move = 0x0001,
@@ -172,6 +173,7 @@ namespace Miku.Client
             Absolute = 0x8000
         }
 
+        [Serializable]
         [StructLayout(LayoutKind.Sequential)]
         public struct POINT
         {
@@ -189,6 +191,7 @@ namespace Miku.Client
             }
         }
 
+        [Serializable]
         public struct MouseEvent
         {
             public POINT pt;
@@ -211,7 +214,28 @@ namespace Miku.Client
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
         #endregion
+
+        [System.Runtime.InteropServices.DllImportAttribute("gdi32.dll")]
+        public static extern bool BitBlt(
+            IntPtr hdcDest,
+            int nXDest,
+            int nYDest,
+            int nWidth,
+            int nHeight,
+            IntPtr hdcSrc,
+            int nXSrc,
+            int nYSrc,
+            System.Int32 dwRop
+        );
+
+        [System.Runtime.InteropServices.DllImportAttribute("gdi32.dll")]
+        public static extern IntPtr CreateDC(
+            string lpszDriver,
+            string lpszDevice,
+            string lpszOutput,
+            IntPtr lpInitData
+        );
     }
 
-       
+
 }

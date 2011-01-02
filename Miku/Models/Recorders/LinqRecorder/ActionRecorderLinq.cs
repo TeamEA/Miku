@@ -7,18 +7,26 @@ using System.IO;
 
 namespace Miku.Client.Models.Recorders
 {
-    public abstract class ActionRecorderLinq
+    public abstract class ActionRecorderLinq : IActionRecorder
     {
         protected XDocument xDoc;
         protected XElement xRoot;
-        protected string actionsListTmpFileName;
+        protected string actionsListFileName;
+        protected const string actionsListTmpFileName = "actionlist.tmp";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ActionRecorderLinq"/> class.
         /// </summary>
         public ActionRecorderLinq()
         {
-            actionsListTmpFileName = "actionlist.tmp";
+            actionsListFileName = actionsListTmpFileName;
+
+            InitializeRecordedFile();
+        }
+
+        public ActionRecorderLinq(string actionsListFileName)
+        {
+            this.actionsListFileName = actionsListFileName;
 
             InitializeRecordedFile();
         }
@@ -38,12 +46,12 @@ namespace Miku.Client.Models.Recorders
         /// </summary>
         private void InitializeRecordedFileAttributes()
         {
-            if (File.Exists(this.actionsListTmpFileName))
+            if (File.Exists(this.actionsListFileName))
             {
-                File.Delete(this.actionsListTmpFileName);
-                Stream stream = File.Create(this.actionsListTmpFileName);
+                File.Delete(this.actionsListFileName);
+                Stream stream = File.Create(this.actionsListFileName);
                 stream.Close();
-                File.SetAttributes(actionsListTmpFileName, FileAttributes.Hidden | FileAttributes.Temporary);
+                File.SetAttributes(actionsListFileName, FileAttributes.Hidden | FileAttributes.Temporary);
             }
         }
 
@@ -54,7 +62,7 @@ namespace Miku.Client.Models.Recorders
         {
             xDoc = new XDocument(new XDeclaration("1.0", "utf-8", "yes"),
                 new XElement("Actions"));
-            Stream stream = File.OpenWrite(this.actionsListTmpFileName);
+            Stream stream = File.OpenWrite(this.actionsListFileName);
             xDoc.Save(stream);
             stream.Flush();
             stream.Close();
@@ -65,7 +73,7 @@ namespace Miku.Client.Models.Recorders
         /// </summary>
         private void InitializeRootOfActionListTree()
         {
-            Stream stream = File.OpenRead(this.actionsListTmpFileName);
+            Stream stream = File.OpenRead(this.actionsListFileName);
             xRoot = XElement.Load(stream);
             stream.Close();
         }
@@ -75,7 +83,7 @@ namespace Miku.Client.Models.Recorders
         /// </summary>
         public void SaveActions()
         {
-            Stream stream = File.OpenWrite(this.actionsListTmpFileName);
+            Stream stream = File.OpenWrite(this.actionsListFileName);
             xRoot.Save(stream);
             stream.Close();
         }
@@ -91,7 +99,7 @@ namespace Miku.Client.Models.Recorders
                 File.Delete(newFilePath);
             }
 
-            File.Copy(this.actionsListTmpFileName, newFilePath);
+            File.Copy(this.actionsListFileName, newFilePath);
             File.SetAttributes(newFilePath, FileAttributes.Normal);
         }
     }

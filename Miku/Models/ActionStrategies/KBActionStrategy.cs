@@ -33,6 +33,9 @@ namespace Miku.Client.Models.ActionStrategies
 
         #region ActionStrategy
 
+        /// <summary>
+        /// Starts to record actions.
+        /// </summary>
         public override void StartRecordActions()
         {
             if (this.kbHook.SetHook())
@@ -41,16 +44,22 @@ namespace Miku.Client.Models.ActionStrategies
             }
             else
             {
-               // throw new Exception("勾取失败");
+                throw new Exception("Can not Set a Hook!");
             }
         }
 
+        /// <summary>
+        /// Stops to record actions.
+        /// </summary>
         public override void StopRecordActions()
         {
             this.kbHook.UnHook();
             this.kbActionRecorder.SaveActions();
         }
 
+        /// <summary>
+        /// Starts to  playback.
+        /// </summary>
         public override void StartPlayback()
         {
             Win32API.KeyEvent[] actions = kbActionRecorder.GetDatas();
@@ -65,6 +74,25 @@ namespace Miku.Client.Models.ActionStrategies
 
         }
 
+        public override void StartPlaybackWithExistingFile(string filePath)
+        {
+            KBActionRecorderLinq tmpKbActionRecorder = new KBActionRecorderLinq(filePath);
+
+            Win32API.KeyEvent[] actions = tmpKbActionRecorder.GetDatas();
+
+            Thread.Sleep(1000);
+
+            foreach (var item in actions)
+            {
+                kbSimulator.Simulate(item.bVk, 0, item.dwFlags, 0);
+                Thread.Sleep(item.delayTime);
+            }
+        }
+
+        /// <summary>
+        /// Saves the actions.
+        /// </summary>
+        /// <param name="filepath">The filepath.</param>
         public override void SaveActions(string filepath)
         {
             kbActionRecorder.SaveRecordedFileAs(filepath);
@@ -72,6 +100,12 @@ namespace Miku.Client.Models.ActionStrategies
 
         #endregion
 
+        /// <summary>
+        ///  the hook_ keyboard event.
+        /// </summary>
+        /// <param name="keyEvent">The key event.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="time">The time.</param>
         void KBHook_KeyboardEvent(KeyboardEvents keyEvent, System.Windows.Forms.Keys key,int time)
         {
             //录制键盘按键

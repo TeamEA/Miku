@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Miku.Server.Communication;
 
 namespace Miku.Server
 {
@@ -19,9 +20,17 @@ namespace Miku.Server
     /// </summary>
     public partial class MainWindow : Window
     {
+        CommunicationServer server;
         public MainWindow()
         {
             InitializeComponent();
+            server = new CommunicationServer(11002);
+            server.OnRegistringEvent += new CommunicationServer.OnRegistring(server_OnRegistringEvent);
+        }
+
+        void server_OnRegistringEvent(string regMsg)
+        {
+            Dispatcher.BeginInvoke((Action)(() => { listBoxRecieved.Items.Add(regMsg); }));
         }
     }
 }

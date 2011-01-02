@@ -14,6 +14,11 @@ namespace Miku.Client.Models.Recorders
             : base()
         {
         }
+
+        public KBActionRecorderLinq(string actionsListFileName)
+            : base(actionsListFileName)
+        {
+        }
         /// <summary>
         /// Writes the action data.
         /// </summary>
@@ -48,7 +53,7 @@ namespace Miku.Client.Models.Recorders
 
         private IEnumerable<XElement> GetKeyboradActionNodes()
         {
-            xRoot = XElement.Load(actionsListTmpFileName);
+            xRoot = XElement.Load(actionsListFileName);
 
             var re = from act in xRoot.Elements("Action")
                      where act.Attribute("Type").Value.ToString() == "KeyboardAct"
@@ -56,7 +61,7 @@ namespace Miku.Client.Models.Recorders
             return re;
         }
 
-        private static void AddKeyboradActionNodesToActionList(List<Win32API.KeyEvent> datas, IEnumerable<XElement> re)
+        private  void AddKeyboradActionNodesToActionList(List<Win32API.KeyEvent> datas, IEnumerable<XElement> re)
         {
             foreach (var item in re)
             {
@@ -73,7 +78,7 @@ namespace Miku.Client.Models.Recorders
             }
         }
 
-        private static void JudgeKeyevent(ref Win32API.KeyEvent keyEvent, string eventName)
+        private  void JudgeKeyevent(ref Win32API.KeyEvent keyEvent, string eventName)
         {
             if (eventName == KeyboardEvents.WM_KeyUp.ToString())
             {

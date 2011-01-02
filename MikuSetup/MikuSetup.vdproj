@@ -13,6 +13,36 @@
 "SccProvider" = "8:SAK"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_2F5CBABBBAF64119BE2312FD411D9BAF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_332283B4673F65DD666AD499ED3CE1BF"
+        "OwnerKey" = "8:_2F5CBABBBAF64119BE2312FD411D9BAF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CDF50CF0F3D4B7484F19EA8EBE578C9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_332283B4673F65DD666AD499ED3CE1BF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2F5CBABBBAF64119BE2312FD411D9BAF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -118,6 +148,57 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_332283B4673F65DD666AD499ED3CE1BF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Miku.Core.Communication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_332283B4673F65DD666AD499ED3CE1BF"
+                    {
+                    "Name" = "8:Miku.Core.Communication.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Miku.Core.Communication.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DEDCEAB6C57B4909AABC0BFFA34B424D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8CDF50CF0F3D4B7484F19EA8EBE578C9"
+            {
+            "SourcePath" = "8:..\\Miku\\bin\\Debug\\Actions.ico"
+            "TargetName" = "8:Actions.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_DEDCEAB6C57B4909AABC0BFFA34B424D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -175,7 +256,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MikuSetup"
         "ProductCode" = "8:{1294F429-8305-42C3-BE5F-218282399AD5}"
-        "PackageCode" = "8:{BC1F851C-776F-4B67-A2D2-EEF6CC683B72}"
+        "PackageCode" = "8:{94190FFD-3C48-4998-AC10-BDB5BD36ABC1}"
         "UpgradeCode" = "8:{FD930B83-2A78-40A9-B7E5-4461CD2506CA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -694,6 +775,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2F5CBABBBAF64119BE2312FD411D9BAF"
+            {
+            "SourcePath" = "8:..\\Miku\\obj\\x86\\Debug\\Miku.Client.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_DEDCEAB6C57B4909AABC0BFFA34B424D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{5F32FDB4-4883-462E-9A35-04D7A126FA97}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
         }
     }
 }

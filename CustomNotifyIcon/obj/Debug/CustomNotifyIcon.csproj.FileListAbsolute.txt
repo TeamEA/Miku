@@ -1,0 +1,10 @@
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\ResolveAssemblyReference.cache
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\GenerateResource.read.1.tlog
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\CustomNotifyIcon.g.resources
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\CustomNotifyIcon.Properties.Resources.resources
+G:\Team\Miku\Miku\CustomNotifyIcon\bin\Debug\CustomNotifyIcon.dll
+G:\Team\Miku\Miku\CustomNotifyIcon\bin\Debug\CustomNotifyIcon.pdb
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\CustomNotifyIcon.dll
+G:\Team\Miku\Miku\CustomNotifyIcon\obj\Debug\CustomNotifyIcon.pdb

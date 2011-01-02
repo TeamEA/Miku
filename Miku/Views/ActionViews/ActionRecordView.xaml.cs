@@ -76,7 +76,7 @@ namespace Miku.Client.Views.ActionViews
 
         public void ResponseKeepRecording(string recordInfo)
         {
-            
+            lbxRecordList.Items.Add(recordInfo);
         }
 
 
@@ -95,7 +95,7 @@ namespace Miku.Client.Views.ActionViews
             }
         }
 
-        void ResponsePlaybackExistFile(ref string filepath)
+        public void ResponsePlaybackExistFile(ref string filepath)
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "MikuActionScript(*.mact)|*.mact";
@@ -124,6 +124,7 @@ namespace Miku.Client.Views.ActionViews
             if (msg.Equals(0x0312) && (wParam.ToInt32() == 247696411))
             {
                 this.actionController.RequestStopRecordActions();
+                handled = true;
             }
             return IntPtr.Zero;
         }
@@ -180,29 +181,18 @@ namespace Miku.Client.Views.ActionViews
         {
             this.Help();
         }
-               
+
+        private void btnContrct_Click(object sender, RoutedEventArgs e)
+        {
+            this.Contract();
+        }
         
         #endregion
 
         #region 自定义函数
         private void AddNotifyIcon(System.Windows.Forms.NotifyIcon notifyIcon, string tooltip, string icoName)
         {
-            notifyIcon.BalloonTipText = tooltip;
-            notifyIcon.Text = tooltip;
-            notifyIcon.Icon = new System.Drawing.Icon(icoName);
-            notifyIcon.Visible = true;
-            notifyIcon.ShowBalloonTip(1000);
-            System.Windows.Forms.ContextMenu menu = new System.Windows.Forms.ContextMenu();
-            System.Windows.Forms.MenuItem closeItem = new System.Windows.Forms.MenuItem();
-            closeItem.Text = "退出";
-            closeItem.Click += new EventHandler(delegate { this.WindowClose(); });
-
-            System.Windows.Forms.MenuItem helpItem = new System.Windows.Forms.MenuItem();
-            helpItem.Text = "帮助";
-            helpItem.Click += new EventHandler(delegate { this.Help(); });
-            menu.MenuItems.Add(helpItem);
-            menu.MenuItems.Add(closeItem);
-            notifyIcon.ContextMenu = menu;
+           
         }
 
         private void Help()
@@ -210,6 +200,11 @@ namespace Miku.Client.Views.ActionViews
             //throw new NotImplementedException();
             AboutSystem aboutSystem = new AboutSystem();
             aboutSystem.ShowDialog();
+        }
+
+        private void Contract()
+        {
+            //throw new NotImplementedException();
         }
 
         private void WindowClose()

@@ -80,7 +80,7 @@ namespace Miku.Client.Models.Recorders
         public object[] GetDatas()
         {
             List<object> datas = new List<object>();
-            XmlReader reader = XmlReader.Create(this.actionsListTmpFileName);
+            XmlReader reader = XmlReader.Create(this.actionsListFileName);
             while (reader.Read())
             {
 
@@ -120,23 +120,7 @@ namespace Miku.Client.Models.Recorders
                                     }
                                     else
                                     {
-                                        while (reader.Read())
-                                        {
-                                            if (reader.NodeType == XmlNodeType.Element && reader.Name == "KeyEvent")
-                                            {
-                                                string eventName = reader.ReadInnerXml();
-                                                if (eventName == KeyboardEvents.WM_KeyUp.ToString())
-                                                {
-                                                    keyEvent.dwFlags = Win32API.KBEventFlag.KeyUp;
-                                                }
-                                                else if (eventName == KeyboardEvents.WM_KeyDown.ToString())
-                                                {
-                                                    keyEvent.dwFlags = Win32API.KBEventFlag.KeyDown;
-                                                }
-                                                break;
-                                            }
-
-                                        }
+                                        keyEvent = JudgeKeyevent(reader, keyEvent);
                                         break;
                                     }
 
@@ -165,42 +149,7 @@ namespace Miku.Client.Models.Recorders
                                     if (reader.NodeType == XmlNodeType.Element && reader.Name == "MouseEvent")
                                     {
                                         string eventName = reader.ReadInnerXml();
-                                        switch (eventName)
-                                        {
-                                            case "WM_MOUSEMOVE":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.Move;
-                                                break;
-                                            case "WM_LBUTTONDOWN":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftDown;
-                                                break;
-                                            case "WM_LBUTTONUP":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftUp;
-                                                break;
-                                            case "WM_LBUTTONDBLCLK":
-                                                //MouseEvent.dwFlags  = Win32API.MouseEventFlag
-                                                break;
-                                            case "WM_RBUTTONDOWN":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.RightDown;
-                                                break;
-                                            case "WM_RBUTTONUP":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.RightUp;
-                                                break;
-                                            case "WM_RBUTTONDBLCLK":
-                                                break;
-                                            case "WM_MBUTTONDOWN":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleDown;
-                                                break;
-                                            case "WM_MBUTTONUP":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleUp;
-                                                break;
-                                            case "WM_MBUTTONDBLCLK":
-                                                break;
-                                            case "WM_MOUSEWHEEL":
-                                                MouseEvent.dwFlags = Win32API.MouseEventFlag.Wheel;
-                                                break;
-                                            default:
-                                                break;
-                                        }
+                                        MouseEvent = JudgeMouseEvent(MouseEvent, eventName);
                                         break;
                                     }
                                     else
@@ -210,45 +159,9 @@ namespace Miku.Client.Models.Recorders
                                             if (reader.NodeType == XmlNodeType.Element && reader.Name == "MouseEvent")
                                             {
                                                 string eventName = reader.ReadInnerXml();
-                                                switch (eventName)
-                                                {
-                                                    case "WM_MOUSEMOVE":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.Move;
-                                                        break;
-                                                    case "WM_LBUTTONDOWN":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftDown;
-                                                        break;
-                                                    case "WM_LBUTTONUP":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftUp;
-                                                        break;
-                                                    case "WM_LBUTTONDBLCLK":
-                                                        //MouseEvent.dwFlags  = Win32API.MouseEventFlag
-                                                        break;
-                                                    case "WM_RBUTTONDOWN":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.RightDown;
-                                                        break;
-                                                    case "WM_RBUTTONUP":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.RightUp;
-                                                        break;
-                                                    case "WM_RBUTTONDBLCLK":
-                                                        break;
-                                                    case "WM_MBUTTONDOWN":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleDown;
-                                                        break;
-                                                    case "WM_MBUTTONUP":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleUp;
-                                                        break;
-                                                    case "WM_MBUTTONDBLCLK":
-                                                        break;
-                                                    case "WM_MOUSEWHEEL":
-                                                        MouseEvent.dwFlags = Win32API.MouseEventFlag.Wheel;
-                                                        break;
-                                                    default:
-                                                        break;
-                                                }
+                                                MouseEvent = JudgeMouseEvent(MouseEvent, eventName);
                                                 break;
                                             }
-
                                         }
                                         break;
                                     }
@@ -268,6 +181,69 @@ namespace Miku.Client.Models.Recorders
             reader.Close();
             return datas.ToArray();
         
+        }
+
+        private Win32API.MouseEvent JudgeMouseEvent(Win32API.MouseEvent MouseEvent, string eventName)
+        {
+            switch (eventName)
+            {
+                case "WM_MOUSEMOVE":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.Move;
+                    break;
+                case "WM_LBUTTONDOWN":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftDown;
+                    break;
+                case "WM_LBUTTONUP":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.LeftUp;
+                    break;
+                case "WM_LBUTTONDBLCLK":
+                    //MouseEvent.dwFlags  = Win32API.MouseEventFlag
+                    break;
+                case "WM_RBUTTONDOWN":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.RightDown;
+                    break;
+                case "WM_RBUTTONUP":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.RightUp;
+                    break;
+                case "WM_RBUTTONDBLCLK":
+                    break;
+                case "WM_MBUTTONDOWN":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleDown;
+                    break;
+                case "WM_MBUTTONUP":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.MiddleUp;
+                    break;
+                case "WM_MBUTTONDBLCLK":
+                    break;
+                case "WM_MOUSEWHEEL":
+                    MouseEvent.dwFlags = Win32API.MouseEventFlag.Wheel;
+                    break;
+                default:
+                    break;
+            }
+            return MouseEvent;
+        }
+
+        private Win32API.KeyEvent JudgeKeyevent(XmlReader reader, Win32API.KeyEvent keyEvent)
+        {
+            while (reader.Read())
+            {
+                if (reader.NodeType == XmlNodeType.Element && reader.Name == "KeyEvent")
+                {
+                    string eventName = reader.ReadInnerXml();
+                    if (eventName == KeyboardEvents.WM_KeyUp.ToString())
+                    {
+                        keyEvent.dwFlags = Win32API.KBEventFlag.KeyUp;
+                    }
+                    else if (eventName == KeyboardEvents.WM_KeyDown.ToString())
+                    {
+                        keyEvent.dwFlags = Win32API.KBEventFlag.KeyDown;
+                    }
+                    break;
+                }
+
+            }
+            return keyEvent;
         }
     }
 }

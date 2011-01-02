@@ -11,7 +11,6 @@ using System.Threading;
 
 namespace Miku.Core.Commuication
 {
-
     public partial class UdpSocket : Component
     {
         private IPEndPoint ServerEndPoint = null;   //定义网络端点
@@ -152,9 +151,7 @@ namespace Miku.Core.Commuication
                 }
                 catch (SocketException e)
                 {
-                    //Active = false;
-                    //MessageBox.Show(e.ErrorCode.ToString());
-                    //Active = true;
+                    MessageBox.Show(e.ErrorCode.ToString());
                 }
             }
         }
@@ -163,7 +160,7 @@ namespace Miku.Core.Commuication
         {
             //从异步状态ar.AsyncState中，获取委托对象
             DataArrivalEventHandler dn = (DataArrivalEventHandler)ar.AsyncState;
-            //一定要EndInvoke，否则你的下场很惨
+            //一定要EndInvoke
             dn.EndInvoke(ar);
         }
 

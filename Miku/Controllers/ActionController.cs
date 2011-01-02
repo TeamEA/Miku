@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using Miku.Client.Models.ActionStrategies;
 using Miku.Client.Views;
+using Miku.Client.Helpers.ExceptionHandler;
 
 namespace Miku.Client.Controllers
 {
@@ -25,22 +26,29 @@ namespace Miku.Client.Controllers
 
         public ActionController(IntPtr hookedInstance, IActionView actionView, RecordStrategies recordStrategy)
         {
-            
-            switch (recordStrategy)
+            try
             {
-                case RecordStrategies.Mouse:
-                    actionStrategy = new MActionStrategy();
-                    break;
-                case RecordStrategies.Keyboard:
-                    actionStrategy = new KBActionStrategy();
-                    break;
-                case RecordStrategies.MouseAndKeyboard:
-                    actionStrategy = new KBMActionStrategy();
-                    break;
-                default:
-                    break;
+                switch (recordStrategy)
+                {
+                    case RecordStrategies.Mouse:
+                        actionStrategy = new MActionStrategy();
+                        break;
+                    case RecordStrategies.Keyboard:
+                        actionStrategy = new KBActionStrategy();
+                        break;
+                    case RecordStrategies.MouseAndKeyboard:
+                        actionStrategy = new KBMActionStrategy();
+                        break;
+                    default:
+                        break;
+                }
+                this.actionView = actionView;
             }
-            this.actionView = actionView;
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
+            }
+            
         }
 
         #region IActionController
@@ -50,10 +58,17 @@ namespace Miku.Client.Controllers
         /// </summary>
         public void RequestStartRecordActions()
         {
-            this.actionView.ResponseStartRecording();
+            try
+            {
+                this.actionView.ResponseStartRecording();
 
-            this.actionStrategy.OnRecordingEvent += new OnRecordingEventHandler(this.actionView.ResponseKeepRecording);
-            this.actionStrategy.StartRecordActions();
+                this.actionStrategy.OnRecordingEvent += new OnRecordingEventHandler(this.actionView.ResponseKeepRecording);
+                this.actionStrategy.StartRecordActions();
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
+            }
         }
 
         /// <summary>
@@ -61,9 +76,16 @@ namespace Miku.Client.Controllers
         /// </summary>
         public void RequestStopRecordActions()
         {
-            this.actionView.ResponseStopRecording();
+            try
+            {
+                this.actionView.ResponseStopRecording();
 
-            this.actionStrategy.StopRecordActions();
+                this.actionStrategy.StopRecordActions();
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
+            }
         }
 
         /// <summary>
@@ -71,9 +93,16 @@ namespace Miku.Client.Controllers
         /// </summary>
         public void RequestStartPlayback()
         {
-            this.actionView.ResponseStartPlayback();
+            try
+            {
+                this.actionView.ResponseStartPlayback();
 
-            this.actionStrategy.StartPlayback();
+                this.actionStrategy.StartPlayback();
+            }
+            catch(Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
+            }
         }
 
         /// <summary>
@@ -81,15 +110,37 @@ namespace Miku.Client.Controllers
         /// </summary>
         public void RequestSaveActions()
         {
-            string filepath = String.Empty;
-
-            this.actionView.ResponseSaveActions(ref filepath);
-
-            if (filepath != String.Empty)
+            try
             {
-                this.actionStrategy.SaveActions(filepath);
+                string filepath = String.Empty;
+
+                this.actionView.ResponseSaveActions(ref filepath);
+
+                if (filepath != String.Empty)
+                {
+                    this.actionStrategy.SaveActions(filepath);
+                }
+            }
+            catch(Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
             }
             
+        }
+
+        /// <summary>
+        /// Requests  playback exist file.
+        /// </summary>
+        public void RequestPlaybackExistFile(string filepath)
+        {
+            try
+            {
+                throw new NotImplementedException();
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogException(ex);
+            }
         }
     }
     	#endregion

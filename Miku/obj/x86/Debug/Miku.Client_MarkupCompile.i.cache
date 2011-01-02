@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\Team\Miku\Miku\Miku\App.xaml
-18-787793853
+26-661357369
 
-461130664102
-18-863338642
-Dictionarys\Common\exit.xaml;Dictionarys\Common\pause.xaml;Dictionarys\Common\play.xaml;Dictionarys\Common\save.xaml;Dictionarys\Common\stop.xaml;Dictionarys\Common\window.xaml;Dictionarys\Xamls\Buttoneare\Buttoneare.xaml;Dictionarys\Xamls\Main\DynamicStyle.xaml;Dictionarys\Xamls\Main\Main.xaml;Dictionarys\Xamls\Main\System.xaml;Views\ActionViews\ActionRecordView.xaml;Views\ActionViews\HelpView\HelpStepOne.xaml;Views\MainViews\MainView.xaml;Views\TestActionsView.xaml;Views\TestRemoteCommunicationView.xaml;Views\UserControl\XamlResource\BrushResourceDictionary.xaml;Views\UserControl\XamlResource\StyleResourceDictionary.xaml;Views\UserControl\YesNoMessageBox.xaml;
+551487859577
+21432637373
+Assert\Styles.xaml;Assert\XamlResources.xaml;Dictionarys\Common\exit.xaml;Dictionarys\Common\pause.xaml;Dictionarys\Common\play.xaml;Dictionarys\Common\save.xaml;Dictionarys\Common\stop.xaml;Dictionarys\Common\window.xaml;Dictionarys\Xamls\Buttoneare\Buttoneare.xaml;Dictionarys\Xamls\Main\DynamicStyle.xaml;Dictionarys\Xamls\Main\Main.xaml;Dictionarys\Xamls\Main\System.xaml;Dictionarys\Xamls\Style.xaml;Views\ActionViews\ActionRecordView.xaml;Views\ActionViews\ActionView.xaml;Views\ActionViews\HelpView\HelpStepOne.xaml;Views\ActionViews\LoadfileContent.xaml;Views\ActionViews\MainTipPanel.xaml;Views\ActionViews\MouseRecorder.xaml;Views\ActionViews\PlaybackContent.xaml;Views\ActionViews\RecordContent.xaml;Views\ActionViews\SavefileContent.xaml;Views\TestActionsView.xaml;Views\UserControl\XamlResource\BrushResourceDictionary.xaml;Views\UserControl\XamlResource\StyleResourceDictionary.xaml;Views\UserControl\YesNoMessageBox.xaml;
 
 True
 

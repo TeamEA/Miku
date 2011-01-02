@@ -16,6 +16,11 @@ namespace Miku.Client.Models.Recorders
 
         }
 
+        public KBMActionRecorderLinq(string actionsListFileName)
+            : base(actionsListFileName)
+        {
+        }
+
         /// <summary>
         /// Writes the action data.
         /// </summary>
@@ -62,14 +67,14 @@ namespace Miku.Client.Models.Recorders
 
         private IEnumerable<XElement> GetActionNodes()
         {
-            xRoot = XElement.Load(actionsListTmpFileName);
+            xRoot = XElement.Load(actionsListFileName);
 
             var re = from act in xRoot.Elements("Action")
                      select act;
             return re;
         }
 
-        private static void AddActionNodesToActionList(List<object> datas, IEnumerable<XElement> re)
+        private  void AddActionNodesToActionList(List<object> datas, IEnumerable<XElement> re)
         {
             foreach (var item in re)
             {
@@ -86,7 +91,7 @@ namespace Miku.Client.Models.Recorders
             }
         }
 
-        private static void AddMouseActionToActionList(List<object> datas, XElement item)
+        private  void AddMouseActionToActionList(List<object> datas, XElement item)
         {
             Win32API.MouseEvent mouseEvent = new Win32API.MouseEvent();
             mouseEvent.delayTime = Convert.ToInt32(item.Attribute("DelayTime").Value);
@@ -102,7 +107,7 @@ namespace Miku.Client.Models.Recorders
             datas.Add(mouseEvent);
         }
 
-        private static void AddKeyboardActionToActionList(List<object> datas, XElement item)
+        private  void AddKeyboardActionToActionList(List<object> datas, XElement item)
         {
             Win32API.KeyEvent keyEvent = new Win32API.KeyEvent();
             keyEvent.delayTime = Convert.ToInt32(item.Attribute("DelayTime").Value);
@@ -142,7 +147,7 @@ namespace Miku.Client.Models.Recorders
 
         private IEnumerable<XElement> GetMouseActionNodes()
         {
-            xRoot = XElement.Load(this.actionsListTmpFileName);
+            xRoot = XElement.Load(this.actionsListFileName);
 
             var re = from act in xRoot.Elements("Action")
                      where act.Attribute("Type").Value.ToString() == "MouseAct"
@@ -150,7 +155,7 @@ namespace Miku.Client.Models.Recorders
             return re;
         }
 
-        private static void AddMouseActionNodesToActionList(List<Win32API.MouseEvent> datas, IEnumerable<XElement> re)
+        private  void AddMouseActionNodesToActionList(List<Win32API.MouseEvent> datas, IEnumerable<XElement> re)
         {
             foreach (var item in re)
             {
@@ -169,7 +174,7 @@ namespace Miku.Client.Models.Recorders
             }
         }
 
-        private static void JudgeMouseevent(XElement item, ref Win32API.MouseEvent mouseEvent)
+        private  void JudgeMouseevent(XElement item, ref Win32API.MouseEvent mouseEvent)
         {
             string eventName = (string)(item.Element("MouseEvent").Value);
             switch (eventName)
@@ -232,7 +237,7 @@ namespace Miku.Client.Models.Recorders
 
         private IEnumerable<XElement> GetKeyboradActionNodes()
         {
-            xRoot = XElement.Load(actionsListTmpFileName);
+            xRoot = XElement.Load(actionsListFileName);
 
             var re = from act in xRoot.Elements("Action")
                      where act.Attribute("Type").Value.ToString() == "KeyboardAct"
@@ -240,7 +245,7 @@ namespace Miku.Client.Models.Recorders
             return re;
         }
 
-        private static void AddKeyboradActionNodesToActionList(List<Win32API.KeyEvent> datas, IEnumerable<XElement> re)
+        private  void AddKeyboradActionNodesToActionList(List<Win32API.KeyEvent> datas, IEnumerable<XElement> re)
         {
             foreach (var item in re)
             {
@@ -257,7 +262,7 @@ namespace Miku.Client.Models.Recorders
             }
         }
 
-        private static void JudgeKeyevent(ref Win32API.KeyEvent keyEvent, string eventName)
+        private  void JudgeKeyevent(ref Win32API.KeyEvent keyEvent, string eventName)
         {
             if (eventName == KeyboardEvents.WM_KeyUp.ToString())
             {

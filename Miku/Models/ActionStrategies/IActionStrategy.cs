@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,6 +14,7 @@ namespace Miku.Client.Models.ActionStrategies
         void StartRecordActions();
         void StopRecordActions();
         void StartPlayback();
+        void StartPlaybackWithExistingFile(string filePath);
         void SaveActions(string filepath);
         event OnRecordingEventHandler OnRecordingEvent;
         void OnRecording(string recordInfo);

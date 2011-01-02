@@ -28,5 +28,14 @@ namespace Miku.Core.Communication.Helpers
             object newObj = deserializer.Deserialize(memStream);
             return newObj;
         }
+
+        public static object DeSerializeFromBinary(Byte[] datas)
+        {
+            MemoryStream memStream = new MemoryStream(datas);
+            memStream.Position = 0;
+            BinaryFormatter deserializer = new BinaryFormatter();
+            object newObj = deserializer.Deserialize(memStream);
+            return newObj;
+        }
     }
 }

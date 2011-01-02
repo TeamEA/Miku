@@ -15,6 +15,10 @@ namespace Miku.Client.Models.Recorders
         {
         }
 
+        public MActionRecorderLinq(string actionsListFileName)
+            : base(actionsListFileName)
+        {
+        }
         /// <summary>
         /// Writes the action data.
         /// </summary>
@@ -48,7 +52,7 @@ namespace Miku.Client.Models.Recorders
 
         private IEnumerable<XElement> GetMouseActionNodes()
         {
-            xRoot = XElement.Load(this.actionsListTmpFileName);
+            xRoot = XElement.Load(this.actionsListFileName);
 
             var re = from act in xRoot.Elements("Action")
                      where act.Attribute("Type").Value.ToString() == "MouseAct"
@@ -56,7 +60,7 @@ namespace Miku.Client.Models.Recorders
             return re;
         }
 
-        private static void AddMouseActionNodesToActionList(List<Win32API.MouseEvent> datas, IEnumerable<XElement> re)
+        private  void AddMouseActionNodesToActionList(List<Win32API.MouseEvent> datas, IEnumerable<XElement> re)
         {
             foreach (var item in re)
             {
@@ -75,7 +79,7 @@ namespace Miku.Client.Models.Recorders
             }
         }
 
-        private static void JudgeMouseevent(XElement item, ref Win32API.MouseEvent mouseEvent)
+        private  void JudgeMouseevent(XElement item, ref Win32API.MouseEvent mouseEvent)
         {
             string eventName = (string)(item.Element("MouseEvent").Value);
             switch (eventName)

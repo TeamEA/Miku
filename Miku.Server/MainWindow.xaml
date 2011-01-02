@@ -3,6 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <ListBox Height="242" HorizontalAlignment="Left" Margin="23,34,0,0" Name="listBoxRecieved" VerticalAlignment="Top" Width="441" />
     </Grid>
 </Window>
