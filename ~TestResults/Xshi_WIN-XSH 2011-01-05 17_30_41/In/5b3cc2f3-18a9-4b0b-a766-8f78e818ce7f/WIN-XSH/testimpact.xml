@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="KBActionRecorderLinqConstructorTest" IsTestCase="false" TestCaseId="0" AutomatedTestId="4c80526c-928a-67e8-a5d1-056865b5333e">
+  <Signatures>
+    <Signature>6D95263F8D9063E3109BB26CFEFE5FFFE7934419</Signature>
+    <Signature>0D01E2BACDDE4BC81B228419B606F72A44C40EFA</Signature>
+    <Signature>989293F7794A23C77CB0565C15ACED004522ABEF</Signature>
+    <Signature>B3446857196BE3896724E502B437DE68EBF49358</Signature>
+    <Signature>5BCB27172CC152455081241DA9201BA6598037F7</Signature>
+    <Signature>9BC065E70D47E8FC764504828A3196C58D566BBE</Signature>
+    <Signature>2F2A87C31B09C98A5A7800A41C0F3EDA4B0EA82F</Signature>
+    <Signature>F43010CA14ECA76A52530445A912BF48E263C903</Signature>
+    <Signature>C74EFFB6A12A8E6E2EF13FCF9085BE380C3624CD</Signature>
+  </Signatures>
+</Test>

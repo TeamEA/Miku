@@ -1,0 +1,5 @@
+H:\Project\第五届\Miku\WindowsApiLib\bin\Release\WindowsApiLib.dll
+H:\Project\第五届\Miku\WindowsApiLib\bin\Release\WindowsApiLib.pdb
+H:\Project\第五届\Miku\WindowsApiLib\obj\Release\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\WindowsApiLib\obj\Release\WindowsApiLib.dll
+H:\Project\第五届\Miku\WindowsApiLib\obj\Release\WindowsApiLib.pdb

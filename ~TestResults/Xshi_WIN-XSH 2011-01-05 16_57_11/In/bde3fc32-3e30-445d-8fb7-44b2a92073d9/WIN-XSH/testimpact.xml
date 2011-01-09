@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MActionRecorderLinqConstructorTest1" IsTestCase="false" TestCaseId="0" AutomatedTestId="4f405f52-5a9f-3228-892f-0d0cc709508e">
+  <Signatures>
+    <Signature>9749A2E394627CA1CAF8D74DEE766C42D87743BA</Signature>
+    <Signature>307B59F1F32DFB7943BE54949CD32644F1762256</Signature>
+    <Signature>F16CBBF259E7EED1FA1AE66ADA08584955D57D6E</Signature>
+    <Signature>07970F0C894E2212CC3F3788BE9E2B025CA7EE3A</Signature>
+    <Signature>5BCB27172CC152455081241DA9201BA6598037F7</Signature>
+    <Signature>9BC065E70D47E8FC764504828A3196C58D566BBE</Signature>
+    <Signature>2F2A87C31B09C98A5A7800A41C0F3EDA4B0EA82F</Signature>
+    <Signature>F43010CA14ECA76A52530445A912BF48E263C903</Signature>
+    <Signature>2C2C4FDAD61DCB31BB43AEDB421B95FE6D4A0AE2</Signature>
+  </Signatures>
+</Test>

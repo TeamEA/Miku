@@ -1,8 +1,0 @@
-G:\Team\Miku\Miku\Miku.Test\bin\Debug\Miku.DAL.Test.dll
-G:\Team\Miku\Miku\Miku.Test\bin\Debug\Miku.DAL.Test.pdb
-G:\Team\Miku\Miku\Miku.Test\obj\Debug\ResolveAssemblyReference.cache
-G:\Team\Miku\Miku\Miku.Test\obj\Debug\Miku.DAL.Test.dll
-G:\Team\Miku\Miku\Miku.Test\obj\Debug\Miku.DAL.Test.pdb
-G:\Team\Miku\Miku\Miku.Test\bin\Debug\Miku.DAL.Test.dll.config
-G:\Team\Miku\Miku\Miku.Test\bin\Debug\Miku.DAL.dll
-G:\Team\Miku\Miku\Miku.Test\bin\Debug\Miku.DAL.pdb

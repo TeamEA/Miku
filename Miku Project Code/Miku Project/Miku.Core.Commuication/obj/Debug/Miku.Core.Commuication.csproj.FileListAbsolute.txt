@@ -1,0 +1,5 @@
+H:\Project\第五届\Miku\Miku.Core.Commuication\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.Core.Commuication\bin\Debug\Miku.Core.Commuication.dll
+H:\Project\第五届\Miku\Miku.Core.Commuication\bin\Debug\Miku.Core.Commuication.pdb
+H:\Project\第五届\Miku\Miku.Core.Commuication\obj\Debug\Miku.Core.Commuication.dll
+H:\Project\第五届\Miku\Miku.Core.Commuication\obj\Debug\Miku.Core.Commuication.pdb

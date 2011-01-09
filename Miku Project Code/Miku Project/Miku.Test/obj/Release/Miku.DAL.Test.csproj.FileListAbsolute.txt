@@ -1,0 +1,8 @@
+H:\Project\第五届\Miku\Miku.Test\bin\Release\Miku.DAL.Test.dll.config
+H:\Project\第五届\Miku\Miku.Test\bin\Release\Miku.DAL.Test.dll
+H:\Project\第五届\Miku\Miku.Test\bin\Release\Miku.DAL.Test.pdb
+H:\Project\第五届\Miku\Miku.Test\bin\Release\Miku.DAL.dll
+H:\Project\第五届\Miku\Miku.Test\bin\Release\Miku.DAL.pdb
+H:\Project\第五届\Miku\Miku.Test\obj\Release\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.Test\obj\Release\Miku.DAL.Test.dll
+H:\Project\第五届\Miku\Miku.Test\obj\Release\Miku.DAL.Test.pdb

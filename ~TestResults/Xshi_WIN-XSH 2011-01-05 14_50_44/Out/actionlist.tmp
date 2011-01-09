@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Actions>
+  <Action Type="MouseAct" DelayTime="10">
+    <Position>(0,0)</Position>
+    <MouseEvent>WM_LBUTTONDOWN</MouseEvent>
+  </Action>
+</Actions>

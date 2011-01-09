@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Actions>
+  <Action Type="KeyboardAct" DelayTime="10">
+    <KeyData FriendlyName="A">65</KeyData>
+    <KeyEvent>WM_KeyDown</KeyEvent>
+  </Action>
+</Actions>

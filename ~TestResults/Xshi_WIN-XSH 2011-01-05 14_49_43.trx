@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e4824597-33a2-442f-937c-e9e0bd3ee788" name="Xshi@WIN-XSH 2011-01-05 14:49:43" runUser="WIN-XSH\Xshi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bb1d265e-4737-41bc-af0d-b611d037b4bb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Xshi_WIN-XSH 2011-01-05 14_49_43">
+      <DeploymentItem filename="G:\Team\Miku\SimpleMiku\SimpleMiku\Miku\bin\Debug\Miku.Client.exe" />
+      <DeploymentItem filename="C:\Program Files\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\Microsoft.Expression.Interactions.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\System.Windows.Interactivity.dll" />
+      <DeploymentItem filename="G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-01-05T14:49:43.5527343+08:00" queuing="2011-01-05T14:49:43.6064453+08:00" start="2011-01-05T14:49:43.7177734+08:00" finish="2011-01-05T14:49:48.8027343+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="31" executed="31" passed="27" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="MActionRecorderLinqConstructorTest1" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="4f405f52-5a9f-3228-892f-0d0cc709508e">
+      <Execution id="475625df-8e13-46f6-9508-9b9dd3ff25bd" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MActionRecorderLinqConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="WriteDataTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="2a3e0824-7372-7203-e1d6-a28be058ab98">
+      <Execution id="2b7246f4-fb77-4e33-842a-8979eb269089" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WriteDataTest" />
+    </UnitTest>
+    <UnitTest name="GetKeyboradActionNodesTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="e12cffd0-a277-ce4a-73f5-bb421ed2903f">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="491d06d6-c835-4286-a7b7-d209b9a06f77" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetKeyboradActionNodesTest" />
+    </UnitTest>
+    <UnitTest name="JudgeMouseeventTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="359dce17-c496-3826-0655-d0a5251ff195">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="25cb83ad-7093-442a-9509-f7fd6faf3af3" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JudgeMouseeventTest" />
+    </UnitTest>
+    <UnitTest name="AddActionNodesToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="ce44d49a-bcb6-8223-08fe-e0e7025a1055">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="75f84915-5abb-4375-be25-d549871cb147" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddActionNodesToActionListTest" />
+    </UnitTest>
+    <UnitTest name="GetKeyboradActionNodesTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="f24fc520-1e6a-d441-0991-43324cf01c81">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="7dd31158-c172-4af1-9261-d5467b37caa1" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetKeyboradActionNodesTest" />
+    </UnitTest>
+    <UnitTest name="GetDatasTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="7edec188-4dd0-83ec-7689-4d107522630b">
+      <Execution id="5c293205-3236-4868-8f51-ce43ab86cf51" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDatasTest" />
+    </UnitTest>
+    <UnitTest name="JudgeKeyeventTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="074d3a28-d150-b66f-57b9-7e0da040bdd8">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="28f896dd-b240-4a45-b107-5c31e2715a4f" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JudgeKeyeventTest" />
+    </UnitTest>
+    <UnitTest name="WriteDataTest1" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="823f77e3-d0e6-dd11-9826-7284ca01aa9f">
+      <Execution id="7fe1ad4e-8b33-4786-b4a2-be00da6b0ffe" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WriteDataTest1" />
+    </UnitTest>
+    <UnitTest name="AddMouseActionNodesToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="4fd399ce-c2ac-ae35-baa9-1855299e1db7">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="e88ea62a-b99d-4944-8718-9f5420ceeb66" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddMouseActionNodesToActionListTest" />
+    </UnitTest>
+    <UnitTest name="GetActionNodesTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="d208e47e-0502-18fe-7042-0afe8fb79b2d">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="e47c93da-f8ca-4c55-96a0-59a6f860a5b3" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetActionNodesTest" />
+    </UnitTest>
+    <UnitTest name="GetDatasTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="084662be-b6c9-1804-888d-880232ba27fc">
+      <Execution id="2d1aa805-147a-4c4c-a162-928b287527f8" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDatasTest" />
+    </UnitTest>
+    <UnitTest name="KBMActionRecorderLinqConstructorTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="cdc4ca46-1f20-c5a9-28ec-4fe875b8bfe5">
+      <Execution id="3d9e1e43-13a8-4efc-a327-767b5cb530c2" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KBMActionRecorderLinqConstructorTest" />
+    </UnitTest>
+    <UnitTest name="GetDatasTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="9ea538e5-c6a2-bf0c-dfff-7a76a8219328">
+      <Execution id="51da1ca2-cb62-4e6d-a97a-2ad0565bd8e8" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDatasTest" />
+    </UnitTest>
+    <UnitTest name="GetMouseActionDatasTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="0b610023-763f-5d2e-656a-3bc9cfba860b">
+      <Execution id="98e86012-e1bf-48ef-81b4-a594c0507821" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMouseActionDatasTest" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="g:\team\miku\simplemiku\simplemiku\miku.test\bin\debug\miku.dal.test.dll" id="37000805-e3d3-d194-910e-da500061ff69">
+      <Execution id="012d88ad-91b9-4330-8544-b1129313809f" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.UnitTest1, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="JudgeKeyeventTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="92c1c465-3330-37d4-5f36-7943d4cac84c">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="f7860d46-5877-4234-b8ed-1767f27658fb" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JudgeKeyeventTest" />
+    </UnitTest>
+    <UnitTest name="MActionRecorderLinqConstructorTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="a29c449b-97e1-032e-d9f9-3d299f827d12">
+      <Execution id="44e15ec1-f65e-407f-a972-8dffbb03d4c9" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MActionRecorderLinqConstructorTest" />
+    </UnitTest>
+    <UnitTest name="KBMActionRecorderLinqConstructorTest1" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="750e142f-11ed-3b17-0d7b-4a799a3fece7">
+      <Execution id="a400ff35-975b-43cb-bc29-e8652010cf86" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KBMActionRecorderLinqConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="GetMouseActionNodesTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="a1d9cf2f-ca94-1fa4-72e7-72f45e315643">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="38fb85bd-34b9-4732-81c6-acd1f58db4a2" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMouseActionNodesTest" />
+    </UnitTest>
+    <UnitTest name="GetKeyboardActionDatasTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="ee7bda79-4244-6b77-1a5b-ea61dadeb9dc">
+      <Execution id="66b322de-e286-4339-abba-1d228ea99891" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetKeyboardActionDatasTest" />
+    </UnitTest>
+    <UnitTest name="KBActionRecorderLinqConstructorTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="4c80526c-928a-67e8-a5d1-056865b5333e">
+      <Execution id="ab997757-37e2-46a5-bcc4-b86e60fa61d8" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KBActionRecorderLinqConstructorTest" />
+    </UnitTest>
+    <UnitTest name="AddKeyboradActionNodesToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="132ac66e-ad4c-b06e-9031-6ec6f3c38688">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="83cdea30-9de2-4e01-8689-9f0208547e10" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddKeyboradActionNodesToActionListTest" />
+    </UnitTest>
+    <UnitTest name="AddMouseActionNodesToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="2e20b2c8-e6e3-97e2-9e0e-f03237d81426">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="42f5c444-f0aa-496c-88e7-39669f55a7df" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddMouseActionNodesToActionListTest" />
+    </UnitTest>
+    <UnitTest name="AddKeyboardActionToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="fdf602e7-0ace-dc3b-07fe-f6247be722fb">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="7843185e-b8d0-4df8-b060-b60d15f6904e" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddKeyboardActionToActionListTest" />
+    </UnitTest>
+    <UnitTest name="WriteDataTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="2b0f40a6-afeb-f090-9d77-5d7a6076bc9b">
+      <Execution id="2492442d-4a83-440c-844d-9ce9da87506e" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.MActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WriteDataTest" />
+    </UnitTest>
+    <UnitTest name="GetMouseActionNodesTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="6736eb01-a01b-c98c-c1fd-34538d7e9bd7">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="9879f78d-4d3a-4eb0-af86-2c54c06b9485" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMouseActionNodesTest" />
+    </UnitTest>
+    <UnitTest name="WriteDataTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="49fd5275-6f51-7ac2-3d0f-ccea8fbc2f6f">
+      <Execution id="e005a1da-f011-47ad-b1af-69ecaf2ce042" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WriteDataTest" />
+    </UnitTest>
+    <UnitTest name="JudgeMouseeventTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="de8df89c-83bc-d6af-1f47-cccbd2125445">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="6e4319b1-3e39-4980-bdeb-468039367fef" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="JudgeMouseeventTest" />
+    </UnitTest>
+    <UnitTest name="AddKeyboradActionNodesToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="1fde853e-d3df-281c-ce19-346306c66dc9">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="c92e8f75-76ee-4a35-a8d3-cb4fc4eceed9" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddKeyboradActionNodesToActionListTest" />
+    </UnitTest>
+    <UnitTest name="AddMouseActionToActionListTest" storage="g:\team\miku\simplemiku\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="a094cc17-cb88-3b4d-60bd-63dcadfedf53">
+      <DeploymentItems>
+        <DeploymentItem filename="Miku.Client.exe" />
+      </DeploymentItems>
+      <Execution id="d7beb2e3-591a-421b-a3c8-98c535f700a9" />
+      <TestMethod codeBase="G:/Team/Miku/SimpleMiku/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.KBMActionRecorderLinqTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddMouseActionToActionListTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="074d3a28-d150-b66f-57b9-7e0da040bdd8" executionId="28f896dd-b240-4a45-b107-5c31e2715a4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="084662be-b6c9-1804-888d-880232ba27fc" executionId="2d1aa805-147a-4c4c-a162-928b287527f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b610023-763f-5d2e-656a-3bc9cfba860b" executionId="98e86012-e1bf-48ef-81b4-a594c0507821" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="132ac66e-ad4c-b06e-9031-6ec6f3c38688" executionId="83cdea30-9de2-4e01-8689-9f0208547e10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fde853e-d3df-281c-ce19-346306c66dc9" executionId="c92e8f75-76ee-4a35-a8d3-cb4fc4eceed9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a3e0824-7372-7203-e1d6-a28be058ab98" executionId="2b7246f4-fb77-4e33-842a-8979eb269089" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b0f40a6-afeb-f090-9d77-5d7a6076bc9b" executionId="2492442d-4a83-440c-844d-9ce9da87506e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e20b2c8-e6e3-97e2-9e0e-f03237d81426" executionId="42f5c444-f0aa-496c-88e7-39669f55a7df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="359dce17-c496-3826-0655-d0a5251ff195" executionId="25cb83ad-7093-442a-9509-f7fd6faf3af3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37000805-e3d3-d194-910e-da500061ff69" executionId="012d88ad-91b9-4330-8544-b1129313809f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49fd5275-6f51-7ac2-3d0f-ccea8fbc2f6f" executionId="e005a1da-f011-47ad-b1af-69ecaf2ce042" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c80526c-928a-67e8-a5d1-056865b5333e" executionId="ab997757-37e2-46a5-bcc4-b86e60fa61d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f405f52-5a9f-3228-892f-0d0cc709508e" executionId="475625df-8e13-46f6-9508-9b9dd3ff25bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fd399ce-c2ac-ae35-baa9-1855299e1db7" executionId="e88ea62a-b99d-4944-8718-9f5420ceeb66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6736eb01-a01b-c98c-c1fd-34538d7e9bd7" executionId="9879f78d-4d3a-4eb0-af86-2c54c06b9485" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="750e142f-11ed-3b17-0d7b-4a799a3fece7" executionId="a400ff35-975b-43cb-bc29-e8652010cf86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7edec188-4dd0-83ec-7689-4d107522630b" executionId="5c293205-3236-4868-8f51-ce43ab86cf51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="823f77e3-d0e6-dd11-9826-7284ca01aa9f" executionId="7fe1ad4e-8b33-4786-b4a2-be00da6b0ffe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92c1c465-3330-37d4-5f36-7943d4cac84c" executionId="f7860d46-5877-4234-b8ed-1767f27658fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ea538e5-c6a2-bf0c-dfff-7a76a8219328" executionId="51da1ca2-cb62-4e6d-a97a-2ad0565bd8e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a094cc17-cb88-3b4d-60bd-63dcadfedf53" executionId="d7beb2e3-591a-421b-a3c8-98c535f700a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1d9cf2f-ca94-1fa4-72e7-72f45e315643" executionId="38fb85bd-34b9-4732-81c6-acd1f58db4a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a29c449b-97e1-032e-d9f9-3d299f827d12" executionId="44e15ec1-f65e-407f-a972-8dffbb03d4c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdc4ca46-1f20-c5a9-28ec-4fe875b8bfe5" executionId="3d9e1e43-13a8-4efc-a327-767b5cb530c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce44d49a-bcb6-8223-08fe-e0e7025a1055" executionId="75f84915-5abb-4375-be25-d549871cb147" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d208e47e-0502-18fe-7042-0afe8fb79b2d" executionId="e47c93da-f8ca-4c55-96a0-59a6f860a5b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de8df89c-83bc-d6af-1f47-cccbd2125445" executionId="6e4319b1-3e39-4980-bdeb-468039367fef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e12cffd0-a277-ce4a-73f5-bb421ed2903f" executionId="491d06d6-c835-4286-a7b7-d209b9a06f77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee7bda79-4244-6b77-1a5b-ea61dadeb9dc" executionId="66b322de-e286-4339-abba-1d228ea99891" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f24fc520-1e6a-d441-0991-43324cf01c81" executionId="7dd31158-c172-4af1-9261-d5467b37caa1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdf602e7-0ace-dc3b-07fe-f6247be722fb" executionId="7843185e-b8d0-4df8-b060-b60d15f6904e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="28f896dd-b240-4a45-b107-5c31e2715a4f" testId="074d3a28-d150-b66f-57b9-7e0da040bdd8" testName="JudgeKeyeventTest" computerName="WIN-XSH" duration="00:00:00.0605851" startTime="2011-01-05T14:49:43.7929687+08:00" endTime="2011-01-05T14:49:44.2373046+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28f896dd-b240-4a45-b107-5c31e2715a4f">
+    </UnitTestResult>
+    <UnitTestResult executionId="2d1aa805-147a-4c4c-a162-928b287527f8" testId="084662be-b6c9-1804-888d-880232ba27fc" testName="GetDatasTest" computerName="WIN-XSH" duration="00:00:00.0165766" startTime="2011-01-05T14:49:44.2460937+08:00" endTime="2011-01-05T14:49:44.2871093+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d1aa805-147a-4c4c-a162-928b287527f8">
+    </UnitTestResult>
+    <UnitTestResult executionId="98e86012-e1bf-48ef-81b4-a594c0507821" testId="0b610023-763f-5d2e-656a-3bc9cfba860b" testName="GetMouseActionDatasTest" computerName="WIN-XSH" duration="00:00:00.0331468" startTime="2011-01-05T14:49:44.2939453+08:00" endTime="2011-01-05T14:49:44.3505859+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98e86012-e1bf-48ef-81b4-a594c0507821">
+    </UnitTestResult>
+    <UnitTestResult executionId="83cdea30-9de2-4e01-8689-9f0208547e10" testId="132ac66e-ad4c-b06e-9031-6ec6f3c38688" testName="AddKeyboradActionNodesToActionListTest" computerName="WIN-XSH" duration="00:00:00.0169313" startTime="2011-01-05T14:49:44.3652343+08:00" endTime="2011-01-05T14:49:44.3994140+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83cdea30-9de2-4e01-8689-9f0208547e10">
+    </UnitTestResult>
+    <UnitTestResult executionId="c92e8f75-76ee-4a35-a8d3-cb4fc4eceed9" testId="1fde853e-d3df-281c-ce19-346306c66dc9" testName="AddKeyboradActionNodesToActionListTest" computerName="WIN-XSH" duration="00:00:00.0508938" startTime="2011-01-05T14:49:44.4970703+08:00" endTime="2011-01-05T14:49:44.5673828+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c92e8f75-76ee-4a35-a8d3-cb4fc4eceed9">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Miku.Client.Test.KBActionRecorderLinqTest.AddKeyboradActionNodesToActionListTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at Miku.Client.Models.Recorders.KBActionRecorderLinq_Accessor.AddKeyboradActionNodesToActionList(List`1 datas, IEnumerable`1 re)
+   at Miku.Client.Test.KBActionRecorderLinqTest.AddKeyboradActionNodesToActionListTest() in G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.Test\KBActionRecorderLinqTest.cs:line 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2b7246f4-fb77-4e33-842a-8979eb269089" testId="2a3e0824-7372-7203-e1d6-a28be058ab98" testName="WriteDataTest" computerName="WIN-XSH" duration="00:00:00.0161605" startTime="2011-01-05T14:49:44.5820312+08:00" endTime="2011-01-05T14:49:44.6083984+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b7246f4-fb77-4e33-842a-8979eb269089">
+    </UnitTestResult>
+    <UnitTestResult executionId="2492442d-4a83-440c-844d-9ce9da87506e" testId="2b0f40a6-afeb-f090-9d77-5d7a6076bc9b" testName="WriteDataTest" computerName="WIN-XSH" duration="00:00:00.0149458" startTime="2011-01-05T14:49:44.6181640+08:00" endTime="2011-01-05T14:49:44.6464843+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2492442d-4a83-440c-844d-9ce9da87506e">
+    </UnitTestResult>
+    <UnitTestResult executionId="42f5c444-f0aa-496c-88e7-39669f55a7df" testId="2e20b2c8-e6e3-97e2-9e0e-f03237d81426" testName="AddMouseActionNodesToActionListTest" computerName="WIN-XSH" duration="00:00:00.0247198" startTime="2011-01-05T14:49:44.6611328+08:00" endTime="2011-01-05T14:49:44.6943359+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42f5c444-f0aa-496c-88e7-39669f55a7df">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Miku.Client.Test.MActionRecorderLinqTest.AddMouseActionNodesToActionListTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at Miku.Client.Models.Recorders.MActionRecorderLinq_Accessor.AddMouseActionNodesToActionList(List`1 datas, IEnumerable`1 re)
+   at Miku.Client.Test.MActionRecorderLinqTest.AddMouseActionNodesToActionListTest() in G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.Test\MActionRecorderLinqTest.cs:line 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="25cb83ad-7093-442a-9509-f7fd6faf3af3" testId="359dce17-c496-3826-0655-d0a5251ff195" testName="JudgeMouseeventTest" computerName="WIN-XSH" duration="00:00:00.0112244" startTime="2011-01-05T14:49:44.7070312+08:00" endTime="2011-01-05T14:49:44.7587890+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25cb83ad-7093-442a-9509-f7fd6faf3af3">
+    </UnitTestResult>
+    <UnitTestResult executionId="012d88ad-91b9-4330-8544-b1129313809f" testId="37000805-e3d3-d194-910e-da500061ff69" testName="TestMethod1" computerName="WIN-XSH" duration="00:00:02.7065367" startTime="2011-01-05T14:49:44.7666015+08:00" endTime="2011-01-05T14:49:47.8300781+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="012d88ad-91b9-4330-8544-b1129313809f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Miku.DAL.Test.UnitTest1.TestMethod1 threw exception: 
+System.Data.SqlClient.SqlException: 用户 'sa' 登录失败。</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Linq.DataContext.SubmitChanges(ConflictMode failureMode)
+   at System.Data.Linq.DataContext.SubmitChanges()
+   at Miku.DAL.Test.UnitTest1.TestMethod1() in G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Test\UnitTest1.cs:line 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e005a1da-f011-47ad-b1af-69ecaf2ce042" testId="49fd5275-6f51-7ac2-3d0f-ccea8fbc2f6f" testName="WriteDataTest" computerName="WIN-XSH" duration="00:00:00.0364007" startTime="2011-01-05T14:49:47.8466796+08:00" endTime="2011-01-05T14:49:47.9052734+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e005a1da-f011-47ad-b1af-69ecaf2ce042">
+    </UnitTestResult>
+    <UnitTestResult executionId="ab997757-37e2-46a5-bcc4-b86e60fa61d8" testId="4c80526c-928a-67e8-a5d1-056865b5333e" testName="KBActionRecorderLinqConstructorTest" computerName="WIN-XSH" duration="00:00:00.0031794" startTime="2011-01-05T14:49:47.9394531+08:00" endTime="2011-01-05T14:49:47.9580078+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab997757-37e2-46a5-bcc4-b86e60fa61d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="475625df-8e13-46f6-9508-9b9dd3ff25bd" testId="4f405f52-5a9f-3228-892f-0d0cc709508e" testName="MActionRecorderLinqConstructorTest1" computerName="WIN-XSH" duration="00:00:00.0136660" startTime="2011-01-05T14:49:47.9648437+08:00" endTime="2011-01-05T14:49:48.0117187+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="475625df-8e13-46f6-9508-9b9dd3ff25bd">
+    </UnitTestResult>
+    <UnitTestResult executionId="e88ea62a-b99d-4944-8718-9f5420ceeb66" testId="4fd399ce-c2ac-ae35-baa9-1855299e1db7" testName="AddMouseActionNodesToActionListTest" computerName="WIN-XSH" duration="00:00:00.0211621" startTime="2011-01-05T14:49:48.0156250+08:00" endTime="2011-01-05T14:49:48.0498046+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e88ea62a-b99d-4944-8718-9f5420ceeb66">
+    </UnitTestResult>
+    <UnitTestResult executionId="9879f78d-4d3a-4eb0-af86-2c54c06b9485" testId="6736eb01-a01b-c98c-c1fd-34538d7e9bd7" testName="GetMouseActionNodesTest" computerName="WIN-XSH" duration="00:00:00.0185291" startTime="2011-01-05T14:49:48.0595703+08:00" endTime="2011-01-05T14:49:48.0888671+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9879f78d-4d3a-4eb0-af86-2c54c06b9485">
+    </UnitTestResult>
+    <UnitTestResult executionId="a400ff35-975b-43cb-bc29-e8652010cf86" testId="750e142f-11ed-3b17-0d7b-4a799a3fece7" testName="KBMActionRecorderLinqConstructorTest1" computerName="WIN-XSH" duration="00:00:00.0047402" startTime="2011-01-05T14:49:48.1044921+08:00" endTime="2011-01-05T14:49:48.1230468+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a400ff35-975b-43cb-bc29-e8652010cf86">
+    </UnitTestResult>
+    <UnitTestResult executionId="5c293205-3236-4868-8f51-ce43ab86cf51" testId="7edec188-4dd0-83ec-7689-4d107522630b" testName="GetDatasTest" computerName="WIN-XSH" duration="00:00:00.0359027" startTime="2011-01-05T14:49:48.1337890+08:00" endTime="2011-01-05T14:49:48.2031250+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c293205-3236-4868-8f51-ce43ab86cf51">
+    </UnitTestResult>
+    <UnitTestResult executionId="7fe1ad4e-8b33-4786-b4a2-be00da6b0ffe" testId="823f77e3-d0e6-dd11-9826-7284ca01aa9f" testName="WriteDataTest1" computerName="WIN-XSH" duration="00:00:00.0078487" startTime="2011-01-05T14:49:48.2099609+08:00" endTime="2011-01-05T14:49:48.2382812+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fe1ad4e-8b33-4786-b4a2-be00da6b0ffe">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7860d46-5877-4234-b8ed-1767f27658fb" testId="92c1c465-3330-37d4-5f36-7943d4cac84c" testName="JudgeKeyeventTest" computerName="WIN-XSH" duration="00:00:00.0119541" startTime="2011-01-05T14:49:48.2470703+08:00" endTime="2011-01-05T14:49:48.2744140+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7860d46-5877-4234-b8ed-1767f27658fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="51da1ca2-cb62-4e6d-a97a-2ad0565bd8e8" testId="9ea538e5-c6a2-bf0c-dfff-7a76a8219328" testName="GetDatasTest" computerName="WIN-XSH" duration="00:00:00.0124541" startTime="2011-01-05T14:49:48.2812500+08:00" endTime="2011-01-05T14:49:48.3144531+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51da1ca2-cb62-4e6d-a97a-2ad0565bd8e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="d7beb2e3-591a-421b-a3c8-98c535f700a9" testId="a094cc17-cb88-3b4d-60bd-63dcadfedf53" testName="AddMouseActionToActionListTest" computerName="WIN-XSH" duration="00:00:00.0118796" startTime="2011-01-05T14:49:48.3251953+08:00" endTime="2011-01-05T14:49:48.3457031+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7beb2e3-591a-421b-a3c8-98c535f700a9">
+    </UnitTestResult>
+    <UnitTestResult executionId="38fb85bd-34b9-4732-81c6-acd1f58db4a2" testId="a1d9cf2f-ca94-1fa4-72e7-72f45e315643" testName="GetMouseActionNodesTest" computerName="WIN-XSH" duration="00:00:00.0140512" startTime="2011-01-05T14:49:48.3505859+08:00" endTime="2011-01-05T14:49:48.3740234+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38fb85bd-34b9-4732-81c6-acd1f58db4a2">
+    </UnitTestResult>
+    <UnitTestResult executionId="44e15ec1-f65e-407f-a972-8dffbb03d4c9" testId="a29c449b-97e1-032e-d9f9-3d299f827d12" testName="MActionRecorderLinqConstructorTest" computerName="WIN-XSH" duration="00:00:00.0054597" startTime="2011-01-05T14:49:48.3857421+08:00" endTime="2011-01-05T14:49:48.4179687+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44e15ec1-f65e-407f-a972-8dffbb03d4c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="3d9e1e43-13a8-4efc-a327-767b5cb530c2" testId="cdc4ca46-1f20-c5a9-28ec-4fe875b8bfe5" testName="KBMActionRecorderLinqConstructorTest" computerName="WIN-XSH" duration="00:00:00.0172795" startTime="2011-01-05T14:49:48.4355468+08:00" endTime="2011-01-05T14:49:48.4628906+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d9e1e43-13a8-4efc-a327-767b5cb530c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="75f84915-5abb-4375-be25-d549871cb147" testId="ce44d49a-bcb6-8223-08fe-e0e7025a1055" testName="AddActionNodesToActionListTest" computerName="WIN-XSH" duration="00:00:00.0108343" startTime="2011-01-05T14:49:48.4794921+08:00" endTime="2011-01-05T14:49:48.5107421+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75f84915-5abb-4375-be25-d549871cb147">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Miku.Client.Test.KBMActionRecorderLinqTest.AddActionNodesToActionListTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at Miku.Client.Models.Recorders.KBMActionRecorderLinq_Accessor.AddActionNodesToActionList(List`1 datas, IEnumerable`1 re)
+   at Miku.Client.Test.KBMActionRecorderLinqTest.AddActionNodesToActionListTest() in G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.Test\KBMActionRecorderLinqTest.cs:line 106
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e47c93da-f8ca-4c55-96a0-59a6f860a5b3" testId="d208e47e-0502-18fe-7042-0afe8fb79b2d" testName="GetActionNodesTest" computerName="WIN-XSH" duration="00:00:00.0090833" startTime="2011-01-05T14:49:48.5263671+08:00" endTime="2011-01-05T14:49:48.5449218+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e47c93da-f8ca-4c55-96a0-59a6f860a5b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e4319b1-3e39-4980-bdeb-468039367fef" testId="de8df89c-83bc-d6af-1f47-cccbd2125445" testName="JudgeMouseeventTest" computerName="WIN-XSH" duration="00:00:00.0092210" startTime="2011-01-05T14:49:48.5478515+08:00" endTime="2011-01-05T14:49:48.5654296+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e4319b1-3e39-4980-bdeb-468039367fef">
+    </UnitTestResult>
+    <UnitTestResult executionId="491d06d6-c835-4286-a7b7-d209b9a06f77" testId="e12cffd0-a277-ce4a-73f5-bb421ed2903f" testName="GetKeyboradActionNodesTest" computerName="WIN-XSH" duration="00:00:00.0149629" startTime="2011-01-05T14:49:48.5722656+08:00" endTime="2011-01-05T14:49:48.6132812+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="491d06d6-c835-4286-a7b7-d209b9a06f77">
+    </UnitTestResult>
+    <UnitTestResult executionId="66b322de-e286-4339-abba-1d228ea99891" testId="ee7bda79-4244-6b77-1a5b-ea61dadeb9dc" testName="GetKeyboardActionDatasTest" computerName="WIN-XSH" duration="00:00:00.0116434" startTime="2011-01-05T14:49:48.6191406+08:00" endTime="2011-01-05T14:49:48.6484375+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66b322de-e286-4339-abba-1d228ea99891">
+    </UnitTestResult>
+    <UnitTestResult executionId="7dd31158-c172-4af1-9261-d5467b37caa1" testId="f24fc520-1e6a-d441-0991-43324cf01c81" testName="GetKeyboradActionNodesTest" computerName="WIN-XSH" duration="00:00:00.0093220" startTime="2011-01-05T14:49:48.6542968+08:00" endTime="2011-01-05T14:49:48.6816406+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7dd31158-c172-4af1-9261-d5467b37caa1">
+    </UnitTestResult>
+    <UnitTestResult executionId="7843185e-b8d0-4df8-b060-b60d15f6904e" testId="fdf602e7-0ace-dc3b-07fe-f6247be722fb" testName="AddKeyboardActionToActionListTest" computerName="WIN-XSH" duration="00:00:00.0101180" startTime="2011-01-05T14:49:48.6875000+08:00" endTime="2011-01-05T14:49:48.7070312+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7843185e-b8d0-4df8-b060-b60d15f6904e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DeleteSystemUserTest" IsTestCase="false" TestCaseId="0" AutomatedTestId="e4267bc3-5dee-2d97-b093-3c1c3b997296">
+  <Signatures>
+    <Signature>594DF78BD1D848404F186561DB9CC3CD769BEE66</Signature>
+    <Signature>C3450592CF89C3C3C1E2B053E2A9D1E4EE44F6AA</Signature>
+    <Signature>9866C960061A3BB9CE9136D5A30165F32F31EC0D</Signature>
+    <Signature>2ADE910C3F47B054B0B0CC6D55DBD6F0B2F371BB</Signature>
+    <Signature>59713867EC678C84FA868F1594059875125D3046</Signature>
+    <Signature>2A15B51DD119A760825F84BE94E8F9C267FBDDB2</Signature>
+    <Signature>F49FF04513D5F377464210A934B0423FA2FDC349</Signature>
+    <Signature>B9CC921CDEA58B1FB3680AF01832B19E4ACCE1A6</Signature>
+    <Signature>96C909F2922ED01B1D36515C661D7E15769865F3</Signature>
+    <Signature>6D4E317C20BF98945F5FFDEA1850746927754AE6</Signature>
+    <Signature>CC9FAA01CA79D5CE2A3044402593A11CE9DF8F97</Signature>
+    <Signature>6A39775FEAB76C4E730CE870FF7E810F92134868</Signature>
+  </Signatures>
+</Test>

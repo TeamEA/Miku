@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DeleteSystemUserTest" IsTestCase="false" TestCaseId="0" AutomatedTestId="e1816916-68e8-1934-fd49-70c2b0665666">
+  <Signatures>
+    <Signature>6F0230238A2D343AA2B7190594F232AB0CA340DE</Signature>
+    <Signature>ABCDFAB01B403446CA2A3F84D5EEF04ABAB3FBF3</Signature>
+    <Signature>E42C5A1AF9CABB72D62727C6C57E9E139E861E72</Signature>
+    <Signature>59713867EC678C84FA868F1594059875125D3046</Signature>
+    <Signature>F49FF04513D5F377464210A934B0423FA2FDC349</Signature>
+    <Signature>5347AABD6A456CAE0864EACA75988DF30626B7CF</Signature>
+    <Signature>2F641CE551CE4D955D62B4B56D841BBC4C5B3555</Signature>
+  </Signatures>
+</Test>

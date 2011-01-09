@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="92fdb6d0-2a61-4ab0-aca0-bbce92341d7b" name="GH@GH-PC 2010-11-28 13:17:51" runUser="GH-PC\GH" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bb1d265e-4737-41bc-af0d-b611d037b4bb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="H:\Project\第五届\Miku\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="GH_GH-PC 2010-11-28 13_17_51">
+      <DeploymentItem filename="H:\Project\第五届\Miku\Miku.DAL\bin\Debug\Miku.DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-28T13:17:51.1058922+08:00" queuing="2010-11-28T13:17:51.1118926+08:00" start="2010-11-28T13:17:51.1338938+08:00" finish="2010-11-28T13:17:51.5769192+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="h:\project\第五届\miku\miku.test\bin\debug\miku.dal.test.dll" id="37000805-e3d3-d194-910e-da500061ff69">
+      <Execution id="db836728-e1a8-42cb-8985-f6dcc8af0c9c" />
+      <TestMethod codeBase="H:/Project/第五届/Miku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.UnitTest1, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="37000805-e3d3-d194-910e-da500061ff69" executionId="db836728-e1a8-42cb-8985-f6dcc8af0c9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="db836728-e1a8-42cb-8985-f6dcc8af0c9c" testId="37000805-e3d3-d194-910e-da500061ff69" testName="TestMethod1" computerName="GH-PC" duration="00:00:00.0716283" startTime="2010-11-28T13:17:51.1478946+08:00" endTime="2010-11-28T13:17:51.5519177+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db836728-e1a8-42cb-8985-f6dcc8af0c9c">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 Miku.DAL.Test.UnitTest1.TestMethod1 引发了异常: 
+System.InvalidOperationException: 对于映射的存储过程方法，“System.Data.Linq.IExecuteResult”不是有效的返回类型。</Message>
+          <StackTrace>    在 System.Data.Linq.SqlClient.QueryConverter.TranslateStoredProcedureCall(MethodCallExpression mce, MetaFunction function)
+   在 System.Data.Linq.SqlClient.QueryConverter.VisitMappedFunctionCall(MethodCallExpression mc)
+   在 System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   在 System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   在 System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   在 System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.DataContext.ExecuteMethodCall(Object instance, MethodInfo methodInfo, Object[] parameters)
+   在 Miku.DAL.MikuDataContext.GetUserByName(String userName) 位置 H:\Project\第五届\Miku\Miku.DAL\MikuDataContext.cs:行号 28
+   在 Miku.DAL.Test.UnitTest1.TestMethod1() 位置 H:\Project\第五届\Miku\Miku.Test\UnitTest1.cs:行号 31
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

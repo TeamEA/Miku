@@ -1,0 +1,7 @@
+H:\Project\第五届\SimpleMiku\Miku.BLL\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\SimpleMiku\Miku.BLL\bin\Debug\Miku.BLL.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL\bin\Debug\Miku.BLL.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL\bin\Debug\Miku.DAL.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL\bin\Debug\Miku.DAL.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL\obj\Debug\Miku.BLL.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL\obj\Debug\Miku.BLL.pdb

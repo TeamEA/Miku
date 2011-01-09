@@ -1,0 +1,5 @@
+H:\Project\第五届\Miku\Miku.DAL\bin\Release\Miku.DAL.dll
+H:\Project\第五届\Miku\Miku.DAL\bin\Release\Miku.DAL.pdb
+H:\Project\第五届\Miku\Miku.DAL\obj\Release\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.DAL\obj\Release\Miku.DAL.dll
+H:\Project\第五届\Miku\Miku.DAL\obj\Release\Miku.DAL.pdb

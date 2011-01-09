@@ -1,0 +1,11 @@
+H:\Project\第五届\Miku\Miku.DAL\bin\Debug\Miku.DAL.dll
+H:\Project\第五届\Miku\Miku.DAL\bin\Debug\Miku.DAL.pdb
+H:\Project\第五届\Miku\Miku.DAL\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.DAL\obj\Debug\Miku.DAL.dll
+H:\Project\第五届\Miku\Miku.DAL\obj\Debug\Miku.DAL.pdb
+H:\Project\第五届\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.dll
+H:\Project\第五届\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.pdb
+H:\Project\第五届\SimpleMiku\Miku.DAL\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\SimpleMiku\Miku.DAL\obj\Debug\Miku.DAL.dll
+H:\Project\第五届\SimpleMiku\Miku.DAL\obj\Debug\Miku.DAL.pdb
+H:\Project\第五届\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.dll.config

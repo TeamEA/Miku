@@ -1,0 +1,13 @@
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\ApplicationIcon.png
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\Background.png
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\PushNotifications.dll
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\PushNotifications.pdb
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\AppManifest.xaml
+H:\Project\第五届\Miku\Miku.Client.WP7\Bin\Debug\PushNotifications.xap
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\App.g.i.cs
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\MainPage.g.i.cs
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\PushNotifications.g.resources
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\PushNotifications.dll
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\PushNotifications.pdb
+H:\Project\第五届\Miku\Miku.Client.WP7\obj\Debug\XapCacheFile.xml

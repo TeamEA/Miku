@@ -1,0 +1,7 @@
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\bin\Debug\Miku.Client.AutoUITest.dll
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\bin\Debug\Miku.Client.AutoUITest.pdb
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\bin\Debug\Miku.Client.AutoUITest.dll.CodeAnalysisLog.xml
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\bin\Debug\Miku.Client.AutoUITest.dll.lastcodeanalysissucceeded
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\obj\Debug\ResolveAssemblyReference.cache
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\obj\Debug\Miku.Client.AutoUITest.dll
+G:\Team\Miku\SimpleMiku\SimpleMiku\Miku.Client.AutoUITest\obj\Debug\Miku.Client.AutoUITest.pdb

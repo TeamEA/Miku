@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1fe659b3-d34f-474a-ae69-c4d25429b027" name="GH@GH-PC 2011-01-08 23:54:31" runUser="GH-PC\GH" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Trace and Test Impact" id="d5905610-2a10-4318-8485-fca1acb20569">
+    <Description>These are test settings for Trace and Test Impact.</Description>
+    <Deployment runDeploymentRoot="GH_GH-PC 2011-01-08 23_54_31">
+      <DeploymentItem filename="H:\Project\第五届\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/ActionLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.ManualTest.ActionLog.ActionLogPlugin, Microsoft.VisualStudio.TestTools.ManualTest.ActionLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Actions">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="System Information">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-01-08T23:54:31.2862973+08:00" queuing="2011-01-08T23:54:31.9093330+08:00" start="2011-01-08T23:54:39.6627765+08:00" finish="2011-01-08T23:55:05.7472684+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" error="0" failed="3" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <CollectorDataEntries>
+      <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddSystemUserTest" storage="h:\project\第五届\simplemiku\miku.test\bin\debug\miku.dal.test.dll" id="b752c79d-7d1c-42cd-1515-bebfb96ede6e">
+      <Execution id="09338b56-3aeb-486a-a72a-5d8e3605c592" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.SystemUserTest, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddSystemUserTest" />
+    </UnitTest>
+    <UnitTest name="UpdateSystemUserTest" storage="h:\project\第五届\simplemiku\miku.test\bin\debug\miku.dal.test.dll" id="c8cca3ca-83df-75da-a90e-37b63677b15c">
+      <Execution id="98bb243c-8c5e-49c6-8260-278c1b402449" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.SystemUserTest, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateSystemUserTest" />
+    </UnitTest>
+    <UnitTest name="GetSystemUserByLoginNameTest" storage="h:\project\第五届\simplemiku\miku.test\bin\debug\miku.dal.test.dll" id="00702964-cd45-d71c-31b1-42cde9b717db">
+      <Execution id="4cf1c19f-2603-457b-8657-d82224fccab1" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.SystemUserTest, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetSystemUserByLoginNameTest" />
+    </UnitTest>
+    <UnitTest name="DeleteSystemUserTest" storage="h:\project\第五届\simplemiku\miku.test\bin\debug\miku.dal.test.dll" id="e4267bc3-5dee-2d97-b093-3c1c3b997296">
+      <Execution id="0107b86c-52d3-482c-888e-8c03f4a0ca19" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.Test/bin/Debug/Miku.DAL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.DAL.Test.SystemUserTest, Miku.DAL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteSystemUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="00702964-cd45-d71c-31b1-42cde9b717db" executionId="4cf1c19f-2603-457b-8657-d82224fccab1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b752c79d-7d1c-42cd-1515-bebfb96ede6e" executionId="09338b56-3aeb-486a-a72a-5d8e3605c592" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8cca3ca-83df-75da-a90e-37b63677b15c" executionId="98bb243c-8c5e-49c6-8260-278c1b402449" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4267bc3-5dee-2d97-b093-3c1c3b997296" executionId="0107b86c-52d3-482c-888e-8c03f4a0ca19" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4cf1c19f-2603-457b-8657-d82224fccab1" testId="00702964-cd45-d71c-31b1-42cde9b717db" testName="GetSystemUserByLoginNameTest" computerName="GH-PC" duration="00:00:03.5131295" startTime="2011-01-08T23:54:40.4458212+08:00" endTime="2011-01-08T23:54:45.8191286+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cf1c19f-2603-457b-8657-d82224fccab1">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 Miku.DAL.Test.SystemUserTest.GetSystemUserByLoginNameTest 引发了异常: 
+System.InvalidOperationException: 序列不包含任何元素</Message>
+          <StackTrace>    在 System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   在 System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   在 System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   在 System.Data.Linq.Table`1.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Miku.DAL.SystemUser.GetSystemUserByLoginName(String loginName) 位置 H:\Project\第五届\SimpleMiku\Miku.DAL\SystemUser.cs:行号 25
+   在 Miku.DAL.Test.SystemUserTest.GetSystemUserByLoginNameTest() 位置 H:\Project\第五届\SimpleMiku\Miku.Test\SystemUserTest.cs:行号 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TraceDebugger/1.0" collectorDisplayName="IntelliTrace">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\QTAgent32_110108_235445281_7940.iTrace">IntelliTrace file for 'QTAgent32.exe' (7940)</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="09338b56-3aeb-486a-a72a-5d8e3605c592" testId="b752c79d-7d1c-42cd-1515-bebfb96ede6e" testName="AddSystemUserTest" computerName="GH-PC" duration="00:00:00.0177100" startTime="2011-01-08T23:54:45.8311293+08:00" endTime="2011-01-08T23:54:48.2042650+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09338b56-3aeb-486a-a72a-5d8e3605c592">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 Miku.DAL.Test.SystemUserTest.AddSystemUserTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: entity</Message>
+          <StackTrace>    在 System.Data.Linq.Table`1.InsertOnSubmit(TEntity entity)
+   在 Miku.DAL.SystemUser.AddSystemUser(SystemUser sysUser) 位置 H:\Project\第五届\SimpleMiku\Miku.DAL\SystemUser.cs:行号 15
+   在 Miku.DAL.Test.SystemUserTest.AddSystemUserTest() 位置 H:\Project\第五届\SimpleMiku\Miku.Test\SystemUserTest.cs:行号 109
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TraceDebugger/1.0" collectorDisplayName="IntelliTrace">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\QTAgent32_110108_235445867_7940.iTrace">IntelliTrace file for 'QTAgent32.exe' (7940)</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="98bb243c-8c5e-49c6-8260-278c1b402449" testId="c8cca3ca-83df-75da-a90e-37b63677b15c" testName="UpdateSystemUserTest" computerName="GH-PC" duration="00:00:03.1134721" startTime="2011-01-08T23:54:48.2282664+08:00" endTime="2011-01-08T23:54:55.4826813+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98bb243c-8c5e-49c6-8260-278c1b402449">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   在 Miku.DAL.Test.SystemUserTest.UpdateSystemUserTest() 位置 H:\Project\第五届\SimpleMiku\Miku.Test\SystemUserTest.cs:行号 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TraceDebugger/1.0" collectorDisplayName="IntelliTrace">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\QTAgent32_110108_235451367_7940.iTrace">IntelliTrace file for 'QTAgent32.exe' (7940)</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="0107b86c-52d3-482c-888e-8c03f4a0ca19" testId="e4267bc3-5dee-2d97-b093-3c1c3b997296" testName="DeleteSystemUserTest" computerName="GH-PC" duration="00:00:00.0311761" startTime="2011-01-08T23:54:55.4866815+08:00" endTime="2011-01-08T23:54:59.6819215+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0107b86c-52d3-482c-888e-8c03f4a0ca19">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 Miku.DAL.Test.SystemUserTest.DeleteSystemUserTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: entity</Message>
+          <StackTrace>    在 System.Data.Linq.Table`1.DeleteOnSubmit(TEntity entity)
+   在 Miku.DAL.SystemUser.DeleteSystemUser(SystemUser sysUser) 位置 H:\Project\第五届\SimpleMiku\Miku.DAL\SystemUser.cs:行号 20
+   在 Miku.DAL.Test.SystemUserTest.DeleteSystemUserTest() 位置 H:\Project\第五届\SimpleMiku\Miku.Test\SystemUserTest.cs:行号 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TraceDebugger/1.0" collectorDisplayName="IntelliTrace">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\QTAgent32_110108_235455535_7940.iTrace">IntelliTrace file for 'QTAgent32.exe' (7940)</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+  </Results>
+</TestRun>

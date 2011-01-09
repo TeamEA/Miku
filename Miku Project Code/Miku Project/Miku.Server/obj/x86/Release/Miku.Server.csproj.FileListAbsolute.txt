@@ -1,0 +1,13 @@
+H:\Project\第五届\Miku\Miku.Server\bin\Release\Miku.Server.exe
+H:\Project\第五届\Miku\Miku.Server\bin\Release\Miku.Server.pdb
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\ResolveAssemblyReference.cache
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\MainWindow.baml
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\MainWindow.g.cs
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\App.g.cs
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\Miku.Server_MarkupCompile.cache
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\Miku.Server.g.resources
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\Miku.Server.Properties.Resources.resources
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\GenerateResource.read.1.tlog
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\GenerateResource.write.1.tlog
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\Miku.Server.exe
+H:\Project\第五届\Miku\Miku.Server\obj\x86\Release\Miku.Server.pdb

@@ -1,5 +1,0 @@
-G:\Team\Miku\Miku\WindowsApiLib\bin\Debug\WindowsApiLib.dll
-G:\Team\Miku\Miku\WindowsApiLib\bin\Debug\WindowsApiLib.pdb
-G:\Team\Miku\Miku\WindowsApiLib\obj\Debug\ResolveAssemblyReference.cache
-G:\Team\Miku\Miku\WindowsApiLib\obj\Debug\WindowsApiLib.dll
-G:\Team\Miku\Miku\WindowsApiLib\obj\Debug\WindowsApiLib.pdb

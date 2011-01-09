@@ -1,0 +1,27 @@
+Exception System.NullReferenceException occurs:
+Error Message is : 未将对象引用设置到对象的实例。
+
+Exception System.NullReferenceException occurs:
+Error Message is : 未将对象引用设置到对象的实例。
+
+Exception System.Net.Sockets.SocketException occurs:
+Error Message is : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:11002
+
+Exception System.Net.Sockets.SocketException occurs:
+Error Message is : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:11002
+
+Exception System.Net.Sockets.SocketException occurs:
+Error Message is : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:11002
+
+Exception System.Net.Sockets.SocketException occurs:
+Error Message is : 由于目标计算机积极拒绝，无法连接。 127.0.0.1:11002
+
+Exception System.NullReferenceException occurs:
+Error Message is : 未将对象引用设置到对象的实例。
+
+Exception System.Exception occurs:
+Error Message is : Can not Set a Hook!
+
+Exception System.Xml.XmlException occurs:
+Error Message is : 根级别上的数据无效。 第 2 行，位置 12。
+

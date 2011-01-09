@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CodedUITestMethod1" IsTestCase="false" TestCaseId="0" AutomatedTestId="a64592c7-8c76-ac7e-feee-03282e5bd032">
+  <Signatures>
+    <Signature>028E6FF69DF1F293E683822CFE94CF4BD7F0B86B</Signature>
+    <Signature>83862136F39890CB93139678A195B3339094C352</Signature>
+    <Signature>E24F0773DAE63BDDDEA3F639A8B069D8486FCE5A</Signature>
+  </Signatures>
+</Test>

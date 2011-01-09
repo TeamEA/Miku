@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Miku">
+  <DataContextMoniker Name="/MikuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="370fb0e7-b1bd-43a8-a11c-6954efb82f51" absoluteBounds="1.25, 2.5, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/MikuDataContext/SystemUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="780c3825-60ea-485f-8d5d-4667a9d82e8e" absoluteBounds="1.2650000000000001, 2.96, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

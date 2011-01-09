@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a3b3f7c9-1ea0-440d-8241-99d40e6da158" name="GH@GH-PC 2011-01-01 16:02:41" runUser="GH-PC\GH" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bb1d265e-4737-41bc-af0d-b611d037b4bb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="GH_GH-PC 2011-01-01 16_02_41">
+      <DeploymentItem filename="H:\Project\第五届\SimpleMiku\Miku\bin\Debug\Miku.Client.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-01-01T16:02:41.1654884+08:00" queuing="2011-01-01T16:02:47.8528709+08:00" start="2011-01-01T16:02:48.2348927+08:00" finish="2011-01-01T16:02:50.1500023+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SampleTestMethod" storage="h:\project\第五届\simplemiku\miku.client.test\bin\debug\miku.client.test.dll" id="fed76f01-a04d-130c-1971-e9c5c1f7ad78">
+      <Execution id="b8981ca3-b6a8-4da4-8213-891d33a7ede6" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.Client.Test/bin/Debug/Miku.Client.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.Client.Test.SampleUnitTest, Miku.Client.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SampleTestMethod" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fed76f01-a04d-130c-1971-e9c5c1f7ad78" executionId="b8981ca3-b6a8-4da4-8213-891d33a7ede6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b8981ca3-b6a8-4da4-8213-891d33a7ede6" testId="fed76f01-a04d-130c-1971-e9c5c1f7ad78" testName="SampleTestMethod" computerName="GH-PC" duration="00:00:00.2393660" startTime="2011-01-01T16:02:48.4659059+08:00" endTime="2011-01-01T16:02:50.0109943+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8981ca3-b6a8-4da4-8213-891d33a7ede6">
+    </UnitTestResult>
+  </Results>
+</TestRun>

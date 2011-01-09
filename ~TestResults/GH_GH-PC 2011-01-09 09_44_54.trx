@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a828f1ec-00f4-45b1-826d-32b428bf8514" name="GH@GH-PC 2011-01-09 09:44:54" runUser="GH-PC\GH" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Trace and Test Impact" id="d5905610-2a10-4318-8485-fca1acb20569">
+    <Description>These are test settings for Trace and Test Impact.</Description>
+    <Deployment runDeploymentRoot="GH_GH-PC 2011-01-09 09_44_54">
+      <DeploymentItem filename="H:\Project\第五届\SimpleMiku\Miku.DAL\bin\Debug\Miku.DAL.dll" />
+      <DeploymentItem filename="H:\Project\第五届\SimpleMiku\Miku.BLL\bin\Debug\Miku.BLL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/ActionLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.ManualTest.ActionLog.ActionLogPlugin, Microsoft.VisualStudio.TestTools.ManualTest.ActionLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Actions">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="System Information">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-01-09T09:44:54.1349206+08:00" queuing="2011-01-09T09:44:54.3289317+08:00" start="2011-01-09T09:44:58.4991702+08:00" finish="2011-01-09T09:45:04.3505049+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <CollectorDataEntries>
+      <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddSystemUserTest" storage="h:\project\第五届\simplemiku\miku.bll.test\bin\debug\miku.bll.test.dll" id="19e7cd36-ebd9-e26f-620f-b51e7799f3ac">
+      <Execution id="d0efadad-5f0a-4899-b343-f1a0031f3e2c" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.BLL.Test/bin/Debug/Miku.BLL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.BLL.Test.BusinessComponentTest, Miku.BLL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddSystemUserTest" />
+    </UnitTest>
+    <UnitTest name="DeleteSystemUserTest" storage="h:\project\第五届\simplemiku\miku.bll.test\bin\debug\miku.bll.test.dll" id="8a68bb12-6052-c024-8642-3f76e765788f">
+      <Execution id="fa5a308e-8fef-445e-9199-337f6412c4ff" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.BLL.Test/bin/Debug/Miku.BLL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.BLL.Test.BusinessComponentTest, Miku.BLL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteSystemUserTest" />
+    </UnitTest>
+    <UnitTest name="GetSystemUserByLoginNameTest" storage="h:\project\第五届\simplemiku\miku.bll.test\bin\debug\miku.bll.test.dll" id="56c98ec9-a9f6-2d10-141c-e96a44154f94">
+      <Execution id="a9bbba61-1bbe-4f73-a58d-731ab24f48cf" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.BLL.Test/bin/Debug/Miku.BLL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.BLL.Test.BusinessComponentTest, Miku.BLL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetSystemUserByLoginNameTest" />
+    </UnitTest>
+    <UnitTest name="UpdateSystemUserTest" storage="h:\project\第五届\simplemiku\miku.bll.test\bin\debug\miku.bll.test.dll" id="92be851a-f034-e956-04d4-c8c3fab15a79">
+      <Execution id="f68092d0-515e-467c-9852-23b435e17f35" />
+      <TestMethod codeBase="H:/Project/第五届/SimpleMiku/Miku.BLL.Test/bin/Debug/Miku.BLL.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Miku.BLL.Test.BusinessComponentTest, Miku.BLL.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateSystemUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="19e7cd36-ebd9-e26f-620f-b51e7799f3ac" executionId="d0efadad-5f0a-4899-b343-f1a0031f3e2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="56c98ec9-a9f6-2d10-141c-e96a44154f94" executionId="a9bbba61-1bbe-4f73-a58d-731ab24f48cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a68bb12-6052-c024-8642-3f76e765788f" executionId="fa5a308e-8fef-445e-9199-337f6412c4ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92be851a-f034-e956-04d4-c8c3fab15a79" executionId="f68092d0-515e-467c-9852-23b435e17f35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d0efadad-5f0a-4899-b343-f1a0031f3e2c" testId="19e7cd36-ebd9-e26f-620f-b51e7799f3ac" testName="AddSystemUserTest" computerName="GH-PC" duration="00:00:01.3986400" startTime="2011-01-09T09:44:58.7511846+08:00" endTime="2011-01-09T09:45:01.0363153+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0efadad-5f0a-4899-b343-f1a0031f3e2c">
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TestImpact/1.0" collectorDisplayName="Test Impact">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\testimpact.xml">Test Impact Data</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9bbba61-1bbe-4f73-a58d-731ab24f48cf" testId="56c98ec9-a9f6-2d10-141c-e96a44154f94" testName="GetSystemUserByLoginNameTest" computerName="GH-PC" duration="00:00:00.2534960" startTime="2011-01-09T09:45:01.0503161+08:00" endTime="2011-01-09T09:45:01.3743347+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9bbba61-1bbe-4f73-a58d-731ab24f48cf">
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TestImpact/1.0" collectorDisplayName="Test Impact">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\testimpact.xml">Test Impact Data</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="fa5a308e-8fef-445e-9199-337f6412c4ff" testId="8a68bb12-6052-c024-8642-3f76e765788f" testName="DeleteSystemUserTest" computerName="GH-PC" duration="00:00:00.0006562" startTime="2011-01-09T09:45:01.3773348+08:00" endTime="2011-01-09T09:45:01.4963416+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa5a308e-8fef-445e-9199-337f6412c4ff">
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TestImpact/1.0" collectorDisplayName="Test Impact">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\testimpact.xml">Test Impact Data</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+    <UnitTestResult executionId="f68092d0-515e-467c-9852-23b435e17f35" testId="92be851a-f034-e956-04d4-c8c3fab15a79" testName="UpdateSystemUserTest" computerName="GH-PC" duration="00:00:00.0431175" startTime="2011-01-09T09:45:01.5063422+08:00" endTime="2011-01-09T09:45:01.6393498+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f68092d0-515e-467c-9852-23b435e17f35">
+      <CollectorDataEntries>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\SystemInformation.xml">GH-PC 中的系统信息</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+        <Collector agentName="GH-PC" uri="datacollector://microsoft/TestImpact/1.0" collectorDisplayName="Test Impact">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="GH-PC\testimpact.xml">Test Impact Data</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+    </UnitTestResult>
+  </Results>
+</TestRun>

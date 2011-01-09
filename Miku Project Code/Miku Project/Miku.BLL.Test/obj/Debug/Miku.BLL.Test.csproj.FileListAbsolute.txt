@@ -1,0 +1,11 @@
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL.Test.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL.Test.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.DAL.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.DAL.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL_Accessor.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\bin\Debug\Miku.BLL_Accessor.pdb
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\obj\Debug\Miku.BLL.Test.dll
+H:\Project\第五届\SimpleMiku\Miku.BLL.Test\obj\Debug\Miku.BLL.Test.pdb
